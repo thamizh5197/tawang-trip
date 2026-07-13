@@ -561,13 +561,41 @@
   }
 
   @media (max-width: 600px) {
+    .hero { min-height: 80vh; padding: 1.5rem; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero-sub { font-size: 1rem; margin-bottom: 1.5rem; }
+    .hero-stats { gap: 1.25rem; }
+    .stat-value { font-size: 1.5rem; }
+
     .timeline::before { left: 20px; }
     .phase-label { padding-left: 52px; }
     .phase-dot { left: 8px; }
     .day-card { padding-left: 52px; }
     .day-num { left: 6px; }
-    .hero-stats { gap: 1.25rem; }
     .day-header { flex-direction: column; }
+    .day-content { padding: 1rem; }
+    .day-title { font-size: 1rem; }
+    .day-desc { font-size: 0.82rem; }
+    .tag { font-size: 0.65rem; padding: 0.15rem 0.5rem; }
+
+    .spot-card { padding: 0.75rem 1rem; }
+    .spot-detail { font-size: 0.75rem; }
+
+    .cal-grid { gap: 4px; }
+    .cal-day { font-size: 0.75rem; }
+
+    .stays-grid {
+      grid-template-columns: auto 1fr;
+    }
+    .stays-date { display: none; }
+    .stays-type { display: none; }
+    .stays-night { font-size: 0.75rem; }
+    .stays-place { font-size: 0.8rem; }
+
+    .essentials-grid { grid-template-columns: 1fr; }
+
+    .booking-item { flex-direction: column; gap: 0.25rem; }
+    .booking-date { min-width: auto; }
   }
 </style>
 </head>
