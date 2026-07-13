@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tawang Road Trip — Oct 2026</title>
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --card: #12121a;
+    --border: #1e1e2e;
+    --text: #e0e0e6;
+    --muted: #7a7a8e;
+    --accent-meg: #22d3ee;
+    --accent-taw: #f59e0b;
+    --accent-buf: #a78bfa;
+    --gradient-meg: linear-gradient(135deg, #0e7490, #22d3ee);
+    --gradient-taw: linear-gradient(135deg, #b45309, #f59e0b);
+    --gradient-buf: linear-gradient(135deg, #6d28d9, #a78bfa);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* Hero */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(34,211,238,0.08) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 50%, rgba(245,158,11,0.08) 0%, transparent 50%),
+      var(--bg);
+  }
+
+  .hero-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    background: linear-gradient(135deg, #22d3ee, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-sub {
+    font-size: 1.25rem;
+    color: var(--muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    animation: bounce 2s infinite;
+    color: var(--muted);
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+
+  /* Leave calendar */
+  .leave-section {
+    max-width: 720px;
+    margin: 0 auto 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .leave-section h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .cal-header {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-align: center;
+    padding: 0.25rem;
+  }
+
+  .cal-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--muted);
+    position: relative;
+  }
+
+  .cal-day.empty { visibility: hidden; }
+  .cal-day.trip { background: rgba(34,211,238,0.15); color: var(--accent-meg); }
+  .cal-day.leave { background: rgba(245,158,11,0.2); color: var(--accent-taw); border: 1px solid rgba(245,158,11,0.3); }
+  .cal-day.holiday { background: rgba(167,139,250,0.2); color: var(--accent-buf); border: 1px solid rgba(167,139,250,0.3); }
+  .cal-day.weekend { background: rgba(34,211,238,0.08); color: var(--accent-meg); }
+
+  .cal-legend {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .cal-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+
+  .cal-legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+  }
+
+  /* Timeline */
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+    position: relative;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border);
+  }
+
+  .phase-label {
+    position: relative;
+    padding-left: 64px;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+  }
+
+  .phase-label:first-child { margin-top: 0; }
+
+  .phase-dot {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+  }
+
+  .phase-dot.meg { background: var(--gradient-meg); }
+  .phase-dot.taw { background: var(--gradient-taw); }
+  .phase-dot.buf { background: var(--gradient-buf); }
+
+  .phase-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+  }
+
+  .phase-title.meg { color: var(--accent-meg); }
+  .phase-title.taw { color: var(--accent-taw); }
+  .phase-title.buf { color: var(--accent-buf); }
+
+  /* Day card */
+  .day-card {
+    position: relative;
+    padding-left: 64px;
+    margin-bottom: 1.5rem;
+  }
+
+  .day-num {
+    position: absolute;
+    left: 14px;
+    top: 1.2rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    background: var(--card);
+    border: 2px solid var(--border);
+    z-index: 1;
+  }
+
+  .day-card.meg .day-num { border-color: var(--accent-meg); color: var(--accent-meg); }
+  .day-card.taw .day-num { border-color: var(--accent-taw); color: var(--accent-taw); }
+  .day-card.buf .day-num { border-color: var(--accent-buf); color: var(--accent-buf); }
+
+  .day-content {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .day-content:hover {
+    transform: translateX(4px);
+  }
+
+  .day-card.meg .day-content:hover { border-color: rgba(34,211,238,0.3); }
+  .day-card.taw .day-content:hover { border-color: rgba(245,158,11,0.3); }
+  .day-card.buf .day-content:hover { border-color: rgba(167,139,250,0.3); }
+
+  .day-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .day-date {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+
+  .day-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  .day-desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 1rem;
+    line-height: 1.7;
+  }
+
+  .day-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .tag-travel {
+    background: rgba(255,255,255,0.05);
+    color: var(--muted);
+  }
+
+  .tag-experience {
+    background: rgba(34,211,238,0.1);
+    color: var(--accent-meg);
+  }
+
+  .tag-experience.taw {
+    background: rgba(245,158,11,0.1);
+    color: var(--accent-taw);
+  }
+
+  .tag-stay {
+    background: rgba(167,139,250,0.1);
+    color: var(--accent-buf);
+  }
+
+  .tag-warning {
+    background: rgba(239,68,68,0.1);
+    color: #f87171;
+  }
+
+  /* Spot card (Shnongpdeng) */
+  .spot-card {
+    background: linear-gradient(135deg, rgba(34,211,238,0.05), rgba(34,211,238,0.02));
+    border: 1px solid rgba(34,211,238,0.15);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-top: 0.75rem;
+  }
+
+  .spot-card h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-meg);
+    margin-bottom: 0.5rem;
+  }
+
+  .spot-card p {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  .spot-detail {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.25rem 0.75rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  .spot-detail dt {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .spot-detail dd {
+    color: var(--muted);
+  }
+
+  /* Booking timeline */
+  .booking-section {
+    max-width: 720px;
+    margin: 2rem auto 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .booking-section h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .booking-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+    align-items: flex-start;
+  }
+
+  .booking-date {
+    min-width: 90px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--accent-taw);
+    padding-top: 0.1rem;
+  }
+
+  .booking-text {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .booking-text strong {
+    color: var(--text);
+  }
+
+  /* Essentials grid */
+  .essentials {
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .essentials h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .essentials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .essential-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+
+  .essential-card h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-taw);
+    margin-bottom: 0.5rem;
+  }
+
+  .essential-card p {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* Stays summary */
+  .stays-section {
+    max-width: 720px;
+    margin: 0 auto 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .stays-section h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .stays-grid {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto;
+    gap: 0;
+  }
+
+  .stays-row {
+    display: contents;
+  }
+
+  .stays-row > * {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.82rem;
+  }
+
+  .stays-night {
+    color: var(--text);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .stays-date {
+    color: var(--muted);
+    white-space: nowrap;
+  }
+
+  .stays-place {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .stays-type {
+    color: var(--muted);
+    font-size: 0.75rem;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .stays-phase-meg { border-left: 3px solid var(--accent-meg); }
+  .stays-phase-taw { border-left: 3px solid var(--accent-taw); }
+  .stays-phase-buf { border-left: 3px solid var(--accent-buf); }
+
+  .stays-count {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 1.25rem;
+    flex-wrap: wrap;
+  }
+
+  .stays-count-item {
+    font-size: 0.75rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .stays-count-item strong {
+    display: block;
+    font-size: 1.1rem;
+    color: var(--text);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 3rem 1.5rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    .timeline::before { left: 20px; }
+    .phase-label { padding-left: 52px; }
+    .phase-dot { left: 8px; }
+    .day-card { padding-left: 52px; }
+    .day-num { left: 6px; }
+    .hero-stats { gap: 1.25rem; }
+    .day-header { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-label">October 2026</div>
+  <h1>Tawang Road Trip</h1>
+  <p class="hero-sub">Meghalaya + Arunachal Pradesh &middot; Creta &middot; 3 people</p>
+  <div class="hero-stats">
+    <div class="stat">
+      <div class="stat-value">11</div>
+      <div class="stat-label">Days</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">6</div>
+      <div class="stat-label">Leave Days</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">~1,500</div>
+      <div class="stat-label">km Total</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">15,200</div>
+      <div class="stat-label">ft Peak Alt</div>
+    </div>
+  </div>
+  <div class="scroll-hint">scroll down</div>
+</section>
+
+<!-- Leave Calendar -->
+<section class="leave-section">
+  <h2>October 2026 &mdash; Leave Plan</h2>
+  <div class="cal-grid">
+    <div class="cal-header">Mo</div>
+    <div class="cal-header">Tu</div>
+    <div class="cal-header">We</div>
+    <div class="cal-header">Th</div>
+    <div class="cal-header">Fr</div>
+    <div class="cal-header">Sa</div>
+    <div class="cal-header">Su</div>
+    <!-- Week 1 -->
+    <div class="cal-day empty"></div>
+    <div class="cal-day empty"></div>
+    <div class="cal-day empty"></div>
+    <div class="cal-day">1</div>
+    <div class="cal-day">2</div>
+    <div class="cal-day">3</div>
+    <div class="cal-day">4</div>
+    <!-- Week 2 -->
+    <div class="cal-day">5</div>
+    <div class="cal-day">6</div>
+    <div class="cal-day">7</div>
+    <div class="cal-day">8</div>
+    <div class="cal-day">9</div>
+    <div class="cal-day">10</div>
+    <div class="cal-day">11</div>
+    <!-- Week 3 -->
+    <div class="cal-day">12</div>
+    <div class="cal-day">13</div>
+    <div class="cal-day">14</div>
+    <div class="cal-day">15</div>
+    <div class="cal-day leave" title="Leave">16</div>
+    <div class="cal-day weekend trip" title="Weekend (trip)">17</div>
+    <div class="cal-day weekend trip" title="Weekend (trip)">18</div>
+    <!-- Week 4 -->
+    <div class="cal-day leave" title="Leave">19</div>
+    <div class="cal-day holiday" title="Vijaya Dasami">20</div>
+    <div class="cal-day leave" title="Leave">21</div>
+    <div class="cal-day leave" title="Leave">22</div>
+    <div class="cal-day leave" title="Leave">23</div>
+    <div class="cal-day weekend trip" title="Weekend (trip)">24</div>
+    <div class="cal-day weekend trip" title="Weekend (trip)">25</div>
+    <!-- Week 5 -->
+    <div class="cal-day leave" title="Leave">26</div>
+    <div class="cal-day">27</div>
+    <div class="cal-day">28</div>
+    <div class="cal-day">29</div>
+    <div class="cal-day">30</div>
+    <div class="cal-day">31</div>
+    <div class="cal-day empty"></div>
+  </div>
+  <div class="cal-legend">
+    <div class="cal-legend-item"><div class="cal-legend-dot" style="background:rgba(245,158,11,0.4);border:1px solid rgba(245,158,11,0.5);"></div> Leave (6 days)</div>
+    <div class="cal-legend-item"><div class="cal-legend-dot" style="background:rgba(167,139,250,0.4);border:1px solid rgba(167,139,250,0.5);"></div> Holiday</div>
+    <div class="cal-legend-item"><div class="cal-legend-dot" style="background:rgba(34,211,238,0.15);"></div> Weekend</div>
+  </div>
+</section>
+
+<!-- Itinerary Timeline -->
+<div class="timeline">
+
+  <!-- MEGHALAYA PHASE -->
+  <div class="phase-label">
+    <div class="phase-dot meg"></div>
+    <div class="phase-title meg">Meghalaya &middot; Days 1&ndash;4</div>
+  </div>
+
+  <div class="day-card meg">
+    <div class="day-num">1</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 16 &middot; Friday</div>
+      </div>
+      <div class="day-title">Fly In + Night Drive to Shillong</div>
+      <div class="day-desc">
+        Fly Chennai 14:40 &rarr; Guwahati 17:45. Grab dinner near the airport, then night drive to <strong>Shillong</strong> (~3h, arrive ~21:30). Check in and crash early &mdash; big day tomorrow.
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">3h flight + 3h drive</span>
+        <span class="tag tag-stay">stay: shillong</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card meg">
+    <div class="day-num">2</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 17 &middot; Saturday</div>
+      </div>
+      <div class="day-title">Sunrise Laitlum + Nongriat Trek</div>
+      <div class="day-desc">
+        Wake early, drive to <strong>Laitlum Canyon</strong> (~45 km from Shillong) &mdash; "End of Hills." 360&deg; views of endless valleys with mist in the morning light. Spend ~1.5h. Then drive to <strong>Tyrna village</strong> (~2.5h). Trek 3,500 steps down through jungle to <strong>Nongriat village</strong>. Visit the <strong>Double Decker Living Root Bridge</strong> &mdash; the only one in the world. Hike to <strong>Rainbow Falls</strong> (skip first lagoon, the blue lagoon later is better). Stay overnight in the village.
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">1h drive + 1.5h canyon + 2.5h drive + 1.5h descent</span>
+        <span class="tag tag-warning">packed day &middot; leave by 5:30 AM</span>
+        <span class="tag tag-experience">laitlum canyon</span>
+        <span class="tag tag-experience">root bridge</span>
+        <span class="tag tag-experience">rainbow falls</span>
+        <span class="tag tag-stay">stay: nongriat village</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card meg">
+    <div class="day-num">3</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 18 &middot; Sunday</div>
+      </div>
+      <div class="day-title">Trek Up + Shnongpdeng Riverside Camp</div>
+      <div class="day-desc">
+        Early morning climb back up from Nongriat (3,500 steps, ~2.5h). Drive to <strong>Shnongpdeng</strong> on the crystal-clear Umngot River. Set up riverside camp. Evening by the water.
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">2.5h climb + 3h drive</span>
+        <span class="tag tag-experience">riverside camping</span>
+        <span class="tag tag-stay">stay: shnongpdeng camp</span>
+      </div>
+      <div class="spot-card">
+        <h4>Shnongpdeng &mdash; The Spot</h4>
+        <p>Same crystal-clear Umngot River as Dawki but without the tourist circus. Boats appear to float on air. 15m underwater visibility in October.</p>
+        <dl class="spot-detail">
+          <dt>Location</dt><dd>West Jaintia Hills, ~90 km from Shillong, near India-Bangladesh border</dd>
+          <dt>How to reach</dt><dd>Shillong &rarr; Dawki road (3h), take Shnongpdeng turn before Dawki town</dd>
+          <dt>Activities</dt><dd>Freediving, snorkeling, cliff jumping, kayaking, boating</dd>
+          <dt>Best time</dt><dd>Oct&ndash;Feb (clearest water, emerald-green)</dd>
+          <dt>Camping</dt><dd>Riverside spots from ~&#8377;400/head</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card meg">
+    <div class="day-num">4</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 19 &middot; Monday</div>
+      </div>
+      <div class="day-title">Freedive + Drive to Bomdila</div>
+      <div class="day-desc">
+        Morning <strong>freediving</strong> in the Umngot &mdash; 15m visibility, transparent emerald-green water. Then drive to Guwahati, pick up the rental car, and drive the <strong>Kalaktang route</strong> to Bomdila. Passes Zangdokpalri Monastery en route.
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-experience">freediving</span>
+        <span class="tag tag-travel">3h drive + 7h drive</span>
+        <span class="tag tag-warning">long day</span>
+        <span class="tag tag-stay">stay: bomdila</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TAWANG PHASE -->
+  <div class="phase-label">
+    <div class="phase-dot taw"></div>
+    <div class="phase-title taw">Tawang Circuit &middot; Days 5&ndash;9</div>
+  </div>
+
+  <div class="day-card taw">
+    <div class="day-num">5</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 20 &middot; Tuesday &middot; Vijaya Dasami</div>
+      </div>
+      <div class="day-title">Bomdila &rarr; Dirang &mdash; Acclimatize</div>
+      <div class="day-desc">
+        Short drive to <strong>Dirang</strong>. Rest and acclimatize before the high passes. Explore <strong>Sangti Valley</strong> (riverside meadows, orchards), soak in the <strong>hot springs</strong>, visit <strong>Mandala Top</strong> (108 stupas in concentric circles).
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">1.5h drive + local</span>
+        <span class="tag tag-experience taw">sangti valley</span>
+        <span class="tag tag-experience taw">hot springs</span>
+        <span class="tag tag-experience taw">mandala top</span>
+        <span class="tag tag-stay">stay: dirang</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card taw">
+    <div class="day-num">6</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 21 &middot; Wednesday</div>
+      </div>
+      <div class="day-title">Dirang &rarr; Tawang via Sela Pass</div>
+      <div class="day-desc">
+        The highlight drive. Cross <strong>Sela Pass (13,700 ft)</strong> &mdash; frozen lake, war memorial, army tea canteen. The 2024 <strong>Sela Tunnel</strong> keeps the route open even in snow. Cross before noon as winds and fog roll in. Stop at <strong>Jaswant Garh War Memorial</strong> and <strong>Nuranang (Jang) Falls</strong> (100m cascade).
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">~6h drive &middot; 135 km</span>
+        <span class="tag tag-experience taw">sela pass 13,700 ft</span>
+        <span class="tag tag-experience taw">nuranang falls</span>
+        <span class="tag tag-stay">stay: tawang</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card taw">
+    <div class="day-num">7</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 22 &middot; Thursday</div>
+      </div>
+      <div class="day-title">Tawang Monastery + Town Exploration</div>
+      <div class="day-desc">
+        Pre-dawn <strong>Tawang Monastery</strong> for morning prayers (largest in India, 2nd largest in Asia). Then explore at your own pace: <strong>Urgelling Gompa</strong> (600-year-old birthplace of the 6th Dalai Lama), <strong>Khinmey Monastery</strong> (colorful Medicine Buddha interior), <strong>Chakzam Bridge</strong> (700-year-old iron suspension bridge), <strong>Giant Buddha Statue</strong>. Evening: <strong>Tawang War Memorial Light &amp; Sound show</strong> at sunset (&#8377;50) &mdash; views of the monastery across the valley.
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">relaxed day &middot; local</span>
+        <span class="tag tag-experience taw">monastery sunrise</span>
+        <span class="tag tag-experience taw">urgelling gompa</span>
+        <span class="tag tag-experience taw">chakzam bridge</span>
+        <span class="tag tag-experience taw">war memorial</span>
+        <span class="tag tag-stay">stay: tawang</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card taw">
+    <div class="day-num">8</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 23 &middot; Friday</div>
+      </div>
+      <div class="day-title">Bumla Pass + PTSO Lake + Madhuri Lake</div>
+      <div class="day-desc">
+        Full day excursion by local taxi. Drive to <strong>Bumla Pass (15,200 ft)</strong> &mdash; Indo-China border, army briefing, 19+ lakes along the route. Stop at <strong>PTSO Lake</strong> (travelers say more impressive than Madhuri &mdash; afternoon reflections are best) and <strong>Madhuri Lake (Sangetsar Tso)</strong> with its haunting dead tree trunks.
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">full day &middot; taxi ~&#8377;5,500</span>
+        <span class="tag tag-experience taw">bumla 15,200 ft</span>
+        <span class="tag tag-experience taw">ptso lake</span>
+        <span class="tag tag-experience taw">madhuri lake</span>
+        <span class="tag tag-stay">stay: tawang</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card taw">
+    <div class="day-num">9</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 24 &middot; Saturday</div>
+      </div>
+      <div class="day-title">Tawang &rarr; Bomdila</div>
+      <div class="day-desc">
+        Begin the descent. Recross Sela Pass early morning, slower pace, more photo stops. Visit <strong>Bomdila Monastery</strong>.
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">6&ndash;7h drive</span>
+        <span class="tag tag-stay">stay: bomdila</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- RETURN PHASE -->
+  <div class="phase-label">
+    <div class="phase-dot buf"></div>
+    <div class="phase-title buf">Return &middot; Days 10&ndash;11</div>
+  </div>
+
+  <div class="day-card buf">
+    <div class="day-num">10</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 25 &middot; Sunday</div>
+      </div>
+      <div class="day-title">Bomdila &rarr; Tezpur</div>
+      <div class="day-desc">
+        Easy half-day drive down to the plains. Rest and recover in Tezpur. Absorbs any delays from the mountains.
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">4&ndash;5h drive</span>
+        <span class="tag tag-stay">stay: tezpur</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card buf">
+    <div class="day-num">11</div>
+    <div class="day-content">
+      <div class="day-header">
+        <div class="day-date">Oct 26 &middot; Monday</div>
+      </div>
+      <div class="day-title">Tezpur &rarr; Guwahati &rarr; Fly Home</div>
+      <div class="day-desc">
+        Morning drive to Guwahati (~4h). Return rental car. Fly Guwahati 18:30 &rarr; Chennai 21:30.
+      </div>
+      <div class="day-tags">
+        <span class="tag tag-travel">4h drive + 3h flight</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Booking Timeline -->
+<section class="booking-section">
+  <h2>Booking Deadlines</h2>
+
+  <div class="booking-item">
+    <div class="booking-date" style="color: #4ade80;">&#10003; Done Jul 6</div>
+    <div class="booking-text"><strong>Flights booked.</strong> Outbound: Oct 16, 14:40 MAA &rarr; 17:45 GAU. Return: Oct 26, 18:30 GAU &rarr; 21:30 MAA.</div>
+  </div>
+
+  <div class="booking-item">
+    <div class="booking-date">By Aug 31</div>
+    <div class="booking-text"><strong>Reserve car</strong> in Guwahati. Hyundai Creta, &#8377;25,872 for the entire trip. Confirm airport pickup and drop.</div>
+  </div>
+
+  <div class="booking-item">
+    <div class="booking-date">By Sep 15</div>
+    <div class="booking-text"><strong>Book stays.</strong> Shillong (1N), Nongriat village (1N), Shnongpdeng camping (1N), Bomdila (2N), Dirang (1N), Tawang (3N), Tezpur (1N). Peak season &mdash; book ahead.</div>
+  </div>
+
+  <div class="booking-item">
+    <div class="booking-date">Oct 8&ndash;9</div>
+    <div class="booking-text"><strong>Apply for eILP online.</strong> &#8377;500 for &gt;3 days (up to 14 days). Set validity from Oct 19. Processing: same-day to ~2&ndash;5 working days. Portal: eilp.arunachal.gov.in. Carry printed + digital copies + photo ID.</div>
+  </div>
+
+  <div class="booking-item">
+    <div class="booking-date">Oct 22 eve</div>
+    <div class="booking-text"><strong>Bumla special permit</strong> at DC office in Tawang (booth inside War Memorial campus). No advance booking. Weather-dependent. Foreign nationals not allowed.</div>
+  </div>
+</section>
+
+<!-- Stays Summary -->
+<section class="stays-section">
+  <h2>Nightly Stays &mdash; 10 Nights</h2>
+  <div class="stays-grid">
+    <div class="stays-row">
+      <div class="stays-night stays-phase-meg">Night 1</div>
+      <div class="stays-date">Oct 16 Fri</div>
+      <div class="stays-place">Shillong</div>
+      <div class="stays-type">Hotel / Guesthouse</div>
+    </div>
+    <div class="stays-row">
+      <div class="stays-night stays-phase-meg">Night 2</div>
+      <div class="stays-date">Oct 17 Sat</div>
+      <div class="stays-place">Nongriat Village</div>
+      <div class="stays-type">Village homestay</div>
+    </div>
+    <div class="stays-row">
+      <div class="stays-night stays-phase-meg">Night 3</div>
+      <div class="stays-date">Oct 18 Sun</div>
+      <div class="stays-place">Shnongpdeng</div>
+      <div class="stays-type">Riverside camping</div>
+    </div>
+    <div class="stays-row">
+      <div class="stays-night stays-phase-taw">Night 4</div>
+      <div class="stays-date">Oct 19 Mon</div>
+      <div class="stays-place">Bomdila</div>
+      <div class="stays-type">Hotel</div>
+    </div>
+    <div class="stays-row">
+      <div class="stays-night stays-phase-taw">Night 5</div>
+      <div class="stays-date">Oct 20 Tue</div>
+      <div class="stays-place">Dirang</div>
+      <div class="stays-type">Hotel</div>
+    </div>
+    <div class="stays-row">
+      <div class="stays-night stays-phase-taw">Night 6</div>
+      <div class="stays-date">Oct 21 Wed</div>
+      <div class="stays-place">Tawang</div>
+      <div class="stays-type">Hotel</div>
+    </div>
+    <div class="stays-row">
+      <div class="stays-night stays-phase-taw">Night 7</div>
+      <div class="stays-date">Oct 22 Thu</div>
+      <div class="stays-place">Tawang</div>
+      <div class="stays-type">Hotel</div>
+    </div>
+    <div class="stays-row">
+      <div class="stays-night stays-phase-taw">Night 8</div>
+      <div class="stays-date">Oct 23 Fri</div>
+      <div class="stays-place">Tawang</div>
+      <div class="stays-type">Hotel</div>
+    </div>
+    <div class="stays-row">
+      <div class="stays-night stays-phase-taw">Night 9</div>
+      <div class="stays-date">Oct 24 Sat</div>
+      <div class="stays-place">Bomdila</div>
+      <div class="stays-type">Hotel</div>
+    </div>
+    <div class="stays-row">
+      <div class="stays-night stays-phase-buf">Night 10</div>
+      <div class="stays-date">Oct 25 Sun</div>
+      <div class="stays-place">Tezpur</div>
+      <div class="stays-type">Hotel</div>
+    </div>
+  </div>
+  <div class="stays-count">
+    <div class="stays-count-item"><strong>8</strong> locations</div>
+    <div class="stays-count-item"><strong>10</strong> nights</div>
+    <div class="stays-count-item"><strong>3</strong> Tawang</div>
+    <div class="stays-count-item"><strong>2</strong> Bomdila</div>
+    <div class="stays-count-item"><strong>1</strong> Tezpur</div>
+  </div>
+</section>
+
+<!-- Essentials -->
+<section class="essentials">
+  <h2>Essentials</h2>
+  <div class="essentials-grid">
+    <div class="essential-card">
+      <h3>Cash</h3>
+      <p>Load up at Guwahati &amp; Bomdila. ATMs past Bomdila are unreliable and run dry. Budget &#8377;1,500&ndash;3,000/day.</p>
+    </div>
+    <div class="essential-card">
+      <h3>Connectivity</h3>
+      <p>BSNL and Airtel work patchily. Jio unreliable. Download offline maps before leaving Shillong.</p>
+    </div>
+    <div class="essential-card">
+      <h3>Altitude</h3>
+      <p>Acclimatize in Dirang (Day 5). Carry Diamox if advised. Sela is 13,700 ft, Bumla is 15,200 ft.</p>
+    </div>
+    <div class="essential-card">
+      <h3>Gear</h3>
+      <p>Thermals, windproof jacket, waterproofs, grip shoes, woolen gloves. Fashion coats are useless at 13,000+ ft.</p>
+    </div>
+    <div class="essential-card">
+      <h3>Fuel</h3>
+      <p>Fill up at Bomdila &mdash; stations are scarce beyond. Carry a small reserve can. No fuel between Bomdila and Tawang.</p>
+    </div>
+    <div class="essential-card">
+      <h3>Food</h3>
+      <p>Army-canteen Maggi &amp; tea on high stretches (Sela, Bumla). Carry snacks and water for ride days.</p>
+    </div>
+    <div class="essential-card">
+      <h3>Medical</h3>
+      <p>Personal kit with altitude meds (Diamox if advised), painkillers, prescriptions. Nearest major hospital is a long drive away.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Tawang Road Trip &middot; October 2026 &middot; Plan last updated July 13, 2026
+</footer>
+
+</body>
+</html>
