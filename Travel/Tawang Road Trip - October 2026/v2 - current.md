@@ -6,7 +6,7 @@
 > Holidays used: Vijaya Dasami (Oct 20)
 > Start point: Guwahati (fly from Chennai)
 > Group: 3 people · Hyundai Creta (rental ~₹25,872 for entire trip)
-> Last updated: 2026-07-16
+> Last updated: 2026-08-04
 > Previous version: [v1](v1%20-%20original.md)
 
 ---
@@ -115,7 +115,7 @@ Mo Tu We Th Fr Sa Su
 | 7:00 AM | Reach Guwahati (3h), pick up rental Creta, breakfast |
 | 8:30 AM | Drive Kalaktang route toward Arunachal |
 | 4:30 PM | Reach Dirang (~8h with breaks) |
-| 5:00 PM | **Hot springs** or **TDL Monastery** (whichever you have energy for) |
+| 5:00 PM | Walk around town, relax |
 | 7:00 PM | Dinner |
 
 **Stay: Dirang — Sangti Valley Homestay (~₹700/person)**
@@ -123,27 +123,42 @@ Mo Tu We Th Fr Sa Su
 
 ---
 
-### Day 6 — Oct 21 (Wed) · Dirang to Tawang via Sela Pass
+### Day 6 — Oct 21 (Wed) · Dirang Explore + Acclimatize
+
+| Time | What |
+|------|------|
+| 6:30 AM | **Sangti Valley** — morning walk, Black-necked Crane habitat (1.5h) |
+| 8:00 AM | Breakfast |
+| 9:30 AM | **Dirang Dzong (monastery)** — 500-year-old stone fort monastery |
+| 11:00 AM | **Dirang Hot Springs** — natural sulphur springs, soak and unwind |
+| 12:30 PM | Lunch |
+| 2:00 PM | Rest / nap — acclimatize before altitude days |
+| 4:00 PM | **TDL (Thubsung Dhargyeling) Monastery** — evening prayer session |
+| 5:30 PM | **Mandala Top** — 108 stupas in concentric circles, sunset views |
+| 7:00 PM | Dinner, early sleep |
+
+**Stay: Dirang — Sangti Valley Homestay (night 2, ~₹700/person)**
+
+---
+
+### Day 7 — Oct 22 (Thu) · Dirang to Tawang via Sela Pass
 
 | Time | What |
 |------|------|
 | 6:00 AM | Wake up, leave Dirang |
-| 6:30 AM | **Sangti Valley** — quick morning stop (30 min) |
-| 7:00 AM | Drive toward Tawang |
-| 7:30 AM | **Mandala Top** — 108 stupas in concentric circles (30 min) |
-| 10:00 AM | **Sela Pass (13,700 ft)** — frozen lake, war memorial, army tea canteen |
-| 11:30 AM | **Jaswant Garh War Memorial** |
-| 12:30 PM | **Nuranang (Jang) Falls** — 100m cascade (visit before 3:30 PM for rainbow) |
-| 1:30 PM | Reach Tawang, lunch, check in |
-| 3:00 PM | Rest, acclimatize |
-| 5:00 PM | Walk around town, local food |
+| 8:30 AM | **Sela Pass (13,700 ft)** — frozen lake, war memorial, army tea canteen |
+| 10:00 AM | **Jaswant Garh War Memorial** |
+| 11:00 AM | **Nuranang (Jang) Falls** — 100m cascade (visit before 3:30 PM for rainbow) |
+| 12:00 PM | Reach Tawang, lunch, check in |
+| 2:00 PM | Rest, acclimatize |
+| 4:00 PM | Walk around town, local food |
 | Evening | **Apply for Bumla permit** at DC office (booth inside War Memorial campus) |
 
 **Stay: Tawang — Dondrub Homestay (~₹850/person)**
 
 ---
 
-### Day 7 — Oct 22 (Thu) · Bumla Pass + Lakes
+### Day 8 — Oct 23 (Fri) · Bumla Pass + Lakes
 
 | Time | What |
 |------|------|
@@ -160,7 +175,7 @@ Mo Tu We Th Fr Sa Su
 
 ---
 
-### Day 8 — Oct 23 (Fri) · Tawang Monastery + Gompas + War Memorial
+### Day 9 — Oct 24 (Sat) · Tawang Monastery + Gompas + War Memorial
 
 | Time | What |
 |------|------|
@@ -178,24 +193,16 @@ Mo Tu We Th Fr Sa Su
 
 ---
 
-### Day 9 — Oct 24 (Sat) · PURE DRIVE — Tawang to Guwahati
+### Day 10 — Oct 25 (Sun) · PURE DRIVE — Tawang to Guwahati
 
 | Time | What |
 |------|------|
 | 4:00 AM | Wake up, leave Tawang |
 | 10:00 AM | Pass through Bomdila — quick stop, **Bomdila Monastery** (30 min), lunch |
 | 11:00 AM | Continue to Guwahati |
-| 8:00 PM | Reach Guwahati (~14-16h total) |
+| 8:00 PM | Reach Guwahati (~14-16h total), return rental car |
 
 **Stay: Guwahati — Prashaanti (~₹500/person, 500m from airport)**
-
----
-
-### Day 10 — Oct 25 (Sun) · Rest / Buffer Day
-
-Sleep in, recover from the 14h drive. Return rental car if not done yesterday. Explore Guwahati or just rest. This day absorbs any delays from the drive.
-
-**Stay: Guwahati — Prashaanti (night 2)**
 
 ---
 
@@ -209,10 +216,9 @@ Chill morning. Fly Guwahati 18:30 -> Chennai 21:30.
 
 | | |
 |---|---|
-| Sightseeing days | 5 (Days 2, 3, 6, 7, 8) |
-| Chill day | 1 (Day 4 — Shnongpdeng river) |
-| Pure drive days | 2 (Days 5, 9) |
-| Rest/buffer day | 1 (Day 10) |
+| Sightseeing days | 5 (Days 2, 3, 7, 8, 9) |
+| Chill/explore day | 2 (Day 4 — Shnongpdeng river, Day 6 — Dirang) |
+| Pure drive days | 2 (Days 5, 10) |
 | Travel days | 2 (Days 1, 11) |
 | Total stays | 7 bookings, 10 nights |
 
@@ -225,10 +231,10 @@ Chill morning. Fly Guwahati 18:30 -> Chennai 21:30.
 | 1 | Oct 16 | Shillong | XTSY Hostel | ~₹499 |
 | 2 | Oct 17 | Nongriat | Serene Homestay | ~₹500 |
 | 3-4 | Oct 18-19 | Shnongpdeng | Riverside camping (TBD) | ~₹800/night |
-| 5 | Oct 20 | Dirang | Sangti Valley Homestay | ~₹700 |
-| 6-7-8 | Oct 21-23 | Tawang | Dondrub Homestay | ~₹850/night |
-| 9-10 | Oct 24-25 | Guwahati | Prashaanti | ~₹500/night |
-| **Total** | | | **7 bookings, 10 nights** | **~₹6,500/person** |
+| 5-6 | Oct 20-21 | Dirang | Sangti Valley Homestay | ~₹700/night |
+| 7-8-9 | Oct 22-24 | Tawang | Dondrub Homestay | ~₹850/night |
+| 10 | Oct 25 | Guwahati | Prashaanti | ~₹500 |
+| **Total** | | | **7 bookings, 10 nights** | **~₹6,949/person** |
 
 ---
 
@@ -317,6 +323,12 @@ Chill morning. Fly Guwahati 18:30 -> Chennai 21:30.
 - **7 stay bookings** down from 9 in v1
 - **Added** Urgelling Gompa, Khinmey Monastery, War Memorial Light & Sound show, TDL Monastery, Mandala Top
 
+### v2 update — 2026-08-04
+- **2 nights in Dirang** instead of 1 — full explore/acclimatize day added (Sangti Valley, hot springs, TDL Monastery, Mandala Top, Dirang Dzong)
+- **Mandala Top moved to Dirang day** — visited at sunset instead of early morning rush on the Tawang drive
+- **Guwahati buffer day removed** — drive back on Oct 25, arrive night, fly next day
+- **Same 10 nights, same 7 bookings** — Dirang gets +1, Guwahati loses 1
+
 ---
 
-*Plan v2 — prepared 2026-07-16. Reconfirm road status, permit rules, rental terms, and Shnongpdeng camping availability before departure.*
+*Plan v2 — updated 2026-08-04. Reconfirm road status, permit rules, rental terms, and Shnongpdeng camping availability before departure.*
