@@ -344,8 +344,57 @@
     text-decoration: none;
   }
 
-  a.tag-stay:hover {
-    background: rgba(167,139,250,0.2);
+  /* Stay info card */
+  .stay-info {
+    width: 100%;
+    margin-top: 0.5rem;
+    background: rgba(167,139,250,0.06);
+    border: 1px solid rgba(167,139,250,0.15);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .stay-info-name {
+    font-weight: 700;
+    color: var(--accent-buf);
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  .stay-info-price {
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+
+  .stay-info-rows {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.2rem 0.6rem;
+    margin-top: 0.4rem;
+  }
+
+  .stay-info-label {
+    color: var(--muted);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+
+  .stay-info-value {
+    color: var(--text);
+    font-size: 0.8rem;
+  }
+
+  .stay-info-value a {
+    color: var(--accent-buf);
+    text-decoration: none;
+  }
+
+  .stay-info-value a:hover {
+    text-decoration: underline;
   }
 
   .tag-warning {
@@ -772,7 +821,13 @@
       </div>
       <div class="day-tags">
         <span class="tag tag-travel">3h flight + 3h drive</span>
-        <a href="https://maps.app.goo.gl/QjFkJTR9xEGDhE3w6" target="_blank" class="tag tag-stay">stay: Zostel · &#8377;3,776 (&#8377;793 paid)</a>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Zostel <span class="stay-info-price">&#8377;3,776 (&#8377;793 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 16 &rarr; Oct 17</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/QjFkJTR9xEGDhE3w6" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -794,7 +849,14 @@
         <span class="tag tag-experience">wei saw dong falls</span>
         <span class="tag tag-experience">root bridge</span>
         <span class="tag tag-experience">rainbow falls</span>
-        <a href="https://maps.app.goo.gl/r4DTxCgSjXYyjJtX6" target="_blank" class="tag tag-stay">stay: Serene Homestay · &#8377;2,800 (&#8377;1,400 paid) · &#9742; +91 878 757 0552 · checkin Oct 17, checkout Oct 18</a>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Serene Homestay <span class="stay-info-price">&#8377;2,800 (&#8377;1,400 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 17 &rarr; Oct 18</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">+91 878 757 0552</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/r4DTxCgSjXYyjJtX6" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -812,8 +874,15 @@
       <div class="day-tags">
         <span class="tag tag-travel">2.5h climb + 3h drive</span>
         <span class="tag tag-experience">riverside camping</span>
-        <a href="https://maps.app.goo.gl/bdQJcQrCumuCmMsV9" target="_blank" class="tag tag-stay">stay: Tympang Chalet · &#8377;4,000 (&#8377;500 paid) · &#9742; 93622 31366 · Oct 18&ndash;19</a>
-        <span class="tag tag-warning">buy lunch &amp; dinner in Dawki &mdash; not available in Shnongpdeng</span>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Tympang Chalet <span class="stay-info-price">&#8377;4,000 (&#8377;500 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 18 &rarr; Oct 19</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">93622 31366</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/bdQJcQrCumuCmMsV9" target="_blank">Open in Maps</a></div>
+          <div class="stay-info-label" style="color:#f87171;">Note</div><div class="stay-info-value" style="color:#f87171;">Buy lunch &amp; dinner in Dawki &mdash; not available in Shnongpdeng</div>
+        </div>
       </div>
       <div class="spot-card">
         <h4>Shnongpdeng &mdash; The Spot</h4>
@@ -844,7 +913,14 @@
         <span class="tag tag-experience">snorkeling</span>
         <span class="tag tag-experience">kayaking</span>
         <span class="tag tag-experience">jungle walk</span>
-        <a href="https://maps.app.goo.gl/txmsfU4MYXJswCi78" target="_blank" class="tag tag-stay">stay: Northwing Camp · &#8377;3,600 (&#8377;1,000 paid) · &#9742; +91 60097 95914 · Oct 19 activities, checkout Oct 20</a>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Northwing Camp <span class="stay-info-price">&#8377;3,600 (&#8377;1,000 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 19 &rarr; Oct 20</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">+91 60097 95914</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/txmsfU4MYXJswCi78" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -868,7 +944,14 @@
       <div class="day-tags">
         <span class="tag tag-travel">3h + 8h drive</span>
         <span class="tag tag-warning">long day &middot; 4 AM start</span>
-        <a href="https://maps.app.goo.gl/A653BdP4T3BChYWc7" target="_blank" class="tag tag-stay">stay: Zamdrol Hostel · &#8377;5,200/2N (&#8377;2,600 paid) · &#9742; +91 87328 85221 · checkin Oct 20, checkout Oct 22</a>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Zamdrol Hostel <span class="stay-info-price">&#8377;5,200 / 2 nights (&#8377;2,600 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 20 &rarr; Oct 22</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">+91 87328 85221</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/A653BdP4T3BChYWc7" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -889,7 +972,7 @@
         <span class="tag tag-experience taw">hot springs</span>
         <span class="tag tag-experience taw">mandala top sunset</span>
         <span class="tag tag-experience taw">dirang dzong</span>
-        <span class="tag tag-stay">stay: Zamdrol Hostel night 2</span>
+        <span class="tag tag-stay">Zamdrol Hostel &middot; night 2</span>
       </div>
     </div>
   </div>
@@ -908,7 +991,14 @@
         <span class="tag tag-travel">~6h drive &middot; 135 km</span>
         <span class="tag tag-experience taw">sela pass 13,700 ft</span>
         <span class="tag tag-experience taw">nuranang falls</span>
-        <a href="https://maps.app.goo.gl/hjmeHrc7yhpH9jfk7" target="_blank" class="tag tag-stay">stay: Wanderpals · &#8377;8,400/3N (&#8377;3,000 paid) · &#9742; +91 7629 877 144 · checkin Oct 22, checkout Oct 25</a>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Wanderpals Hospitality <span class="stay-info-price">&#8377;8,400 / 3 nights (&#8377;3,000 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 22 &rarr; Oct 25</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">+91 7629 877 144</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/hjmeHrc7yhpH9jfk7" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -928,7 +1018,7 @@
         <span class="tag tag-experience taw">bumla 15,200 ft</span>
         <span class="tag tag-experience taw">ptso lake</span>
         <span class="tag tag-experience taw">madhuri lake</span>
-        <span class="tag tag-stay">stay: Wanderpals night 2</span>
+        <span class="tag tag-stay">Wanderpals &middot; night 2</span>
       </div>
     </div>
   </div>
@@ -949,7 +1039,7 @@
         <span class="tag tag-experience taw">urgelling gompa</span>
         <span class="tag tag-experience taw">khinmey monastery</span>
         <span class="tag tag-experience taw">war memorial</span>
-        <span class="tag tag-stay">stay: Wanderpals night 3</span>
+        <span class="tag tag-stay">Wanderpals &middot; night 3</span>
       </div>
     </div>
   </div>
@@ -973,7 +1063,13 @@
       <div class="day-tags">
         <span class="tag tag-travel">14&ndash;16h drive</span>
         <span class="tag tag-warning">long day &middot; 4 AM start</span>
-        <a href="https://maps.app.goo.gl/gkRzP788Yo1QhgwV6" target="_blank" class="tag tag-stay">stay: Airbnb · &#8377;5,250 (fully paid)</a>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Airbnb <span class="stay-info-price">&#8377;5,250 (fully paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 25 &rarr; Oct 26</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/gkRzP788Yo1QhgwV6" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
