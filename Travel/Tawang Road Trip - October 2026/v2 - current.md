@@ -45,7 +45,7 @@ Mo Tu We Th Fr Sa Su
 | 7:00 PM | Drive to Shillong (3h) |
 | 10:00 PM | Reach Shillong |
 
-**Stay: Shillong — Zostel ([map](https://maps.app.goo.gl/MtxQ3orSwhSz47TX7)) · advance paid**
+**Stay: Shillong — Zostel ([map](https://maps.app.goo.gl/QjFkJTR9xEGDhE3w6)) · advance paid**
 
 ---
 
@@ -201,7 +201,7 @@ Mo Tu We Th Fr Sa Su
 | 11:00 AM | Continue to Guwahati |
 | 8:00 PM | Reach Guwahati (~14-16h total), return rental car |
 
-**Stay: Guwahati — Airbnb ([map](https://maps.app.goo.gl/AZCXEZK3VcdxQFzs5)) · ₹5,250 fully paid**
+**Stay: Guwahati — Airbnb ([map](https://maps.app.goo.gl/gkRzP788Yo1QhgwV6)) · ₹5,250 fully paid**
 
 ---
 
@@ -227,13 +227,13 @@ Chill morning. Fly Guwahati 18:30 -> Chennai 21:30.
 
 | Night | Date | Place | Stay | Total | Paid | Remaining |
 |-------|------|-------|------|-------|------|-----------|
-| 1 | Oct 16 | Shillong | Zostel ([map](https://maps.app.goo.gl/MtxQ3orSwhSz47TX7)) | ₹3,776 | ₹793 | ₹2,983 |
+| 1 | Oct 16 | Shillong | Zostel ([map](https://maps.app.goo.gl/QjFkJTR9xEGDhE3w6)) | ₹3,776 | ₹793 | ₹2,983 |
 | 2 | Oct 17 | Nongriat | Serene Homestay (☎ +91 878 757 0552) | ₹2,800 | ₹1,400 | ₹1,400 |
 | 3 | Oct 18 | Shnongpdeng | Tympang Chalet (☎ 93622 31366) | ₹4,000 | ₹500 | ₹3,500 |
 | 4 | Oct 19 | Shnongpdeng | Northwing Camp (☎ +91 60097 95914) | ₹3,600 | ₹1,000 | ₹2,600 |
 | 5-6 | Oct 20-21 | Dirang | Zamdrol Hostel (☎ +91 87328 85221) | ₹5,200 | ₹2,600 | ₹2,600 |
 | 7-8-9 | Oct 22-24 | Tawang | Wanderpals Hospitality (☎ +91 7629 877 144) | ₹8,400 | ₹3,000 | ₹5,400 |
-| 10 | Oct 25 | Guwahati | Airbnb ([map](https://maps.app.goo.gl/AZCXEZK3VcdxQFzs5)) | ₹5,250 | ₹5,250 | ₹0 |
+| 10 | Oct 25 | Guwahati | Airbnb ([map](https://maps.app.goo.gl/gkRzP788Yo1QhgwV6)) | ₹5,250 | ₹5,250 | ₹0 |
 | **Total** | | | **7 bookings, 10 nights** | **₹33,026** | **₹14,543** | **₹18,483** |
 | **Per person** | | | | **₹11,009** | **₹4,848** | **₹6,161** |
 
@@ -243,15 +243,15 @@ Chill morning. Fly Guwahati 18:30 -> Chennai 21:30.
 |----------------------|-------|------|-----------|
 | Sangti Valley Trek (Dirang, Day 6) | ₹7,000 | ₹1,000 | ₹6,000 |
 | Flights (₹17,500 x 3) | ₹52,500 | ₹52,500 | ₹0 |
-| Car rental (Hyundai Creta) | ₹25,872 | — | ₹25,872 |
+| Car rental (Hyundai Creta) | ₹25,872 | ₹1,000 | ₹24,872 |
 | Diesel | TBD | — | TBD |
 
 ### Grand Total (Stays + Activities + Transport)
 
 | | Total | Paid | Remaining |
 |---|-------|------|-----------|
-| **Known costs** | **₹1,18,398** | **₹69,043** | **₹49,355** |
-| **Per person** | **₹39,466** | **₹23,014** | **₹16,452** |
+| **Known costs** | **₹1,18,398** | **₹70,043** | **₹48,355** |
+| **Per person** | **₹39,466** | **₹23,348** | **₹16,118** |
 
 *Diesel cost TBD — not included above.*
 
