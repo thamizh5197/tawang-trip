@@ -429,6 +429,67 @@
     color: var(--text);
   }
 
+  /* Budget */
+  .budget-section {
+    max-width: 720px;
+    margin: 0 auto 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .budget-section h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .budget-grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 0;
+  }
+
+  .budget-row {
+    display: contents;
+  }
+
+  .budget-row > * {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.82rem;
+  }
+
+  .budget-label {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .budget-total { color: var(--text); text-align: right; }
+  .budget-paid { color: #4ade80; text-align: right; }
+  .budget-remaining { color: var(--accent-taw); text-align: right; font-weight: 700; }
+
+  .budget-row.budget-footer > * {
+    border-top: 2px solid var(--accent-taw);
+    border-bottom: none;
+    padding-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+
+  .budget-per-person {
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .budget-per-person strong {
+    color: var(--text);
+    font-size: 1.1rem;
+  }
+
   /* Essentials grid */
   .essentials {
     max-width: 800px;
@@ -706,7 +767,7 @@
       </div>
       <div class="day-tags">
         <span class="tag tag-travel">3h flight + 3h drive</span>
-        <span class="tag tag-stay">stay: XTSY Hostel ~&#8377;499/person</span>
+        <span class="tag tag-stay">stay: Zostel · &#8377;3,776 (&#8377;793 paid)</span>
       </div>
     </div>
   </div>
@@ -728,7 +789,7 @@
         <span class="tag tag-experience">wei saw dong falls</span>
         <span class="tag tag-experience">root bridge</span>
         <span class="tag tag-experience">rainbow falls</span>
-        <span class="tag tag-stay">stay: Serene Homestay ~&#8377;500/person</span>
+        <span class="tag tag-stay">stay: Serene Homestay · &#8377;2,800 (&#8377;1,400 paid)</span>
       </div>
     </div>
   </div>
@@ -746,7 +807,7 @@
       <div class="day-tags">
         <span class="tag tag-travel">2.5h climb + 3h drive</span>
         <span class="tag tag-experience">riverside camping</span>
-        <span class="tag tag-stay">stay: riverside camping ~&#8377;800/person</span>
+        <span class="tag tag-stay">stay: Tympang Chalet · &#8377;4,000 (&#8377;500 paid)</span>
       </div>
       <div class="spot-card">
         <h4>Shnongpdeng &mdash; The Spot</h4>
@@ -777,7 +838,7 @@
         <span class="tag tag-experience">snorkeling</span>
         <span class="tag tag-experience">kayaking</span>
         <span class="tag tag-experience">jungle walk</span>
-        <span class="tag tag-stay">stay: Shnongpdeng night 2</span>
+        <span class="tag tag-stay">stay: Northwing Camp · &#8377;3,600 (&#8377;1,000 paid)</span>
       </div>
     </div>
   </div>
@@ -801,7 +862,7 @@
       <div class="day-tags">
         <span class="tag tag-travel">3h + 8h drive</span>
         <span class="tag tag-warning">long day &middot; 4 AM start</span>
-        <span class="tag tag-stay">stay: Sangti Valley Homestay ~&#8377;700/person</span>
+        <span class="tag tag-stay">stay: Zamdrol Hostel · &#8377;5,200/2N (&#8377;2,600 paid)</span>
       </div>
     </div>
   </div>
@@ -812,17 +873,17 @@
       <div class="day-header">
         <div class="day-date">Oct 21 &middot; Wednesday</div>
       </div>
-      <div class="day-title">Dirang Explore + Acclimatize</div>
+      <div class="day-title">Sangti Valley Trek + Dirang Evening</div>
       <div class="day-desc">
-        <strong>Sangti Valley</strong> morning walk (Black-necked Crane habitat). <strong>Dirang Dzong</strong> &mdash; 500-year-old stone fort monastery. <strong>Dirang Hot Springs</strong> &mdash; natural sulphur springs. Afternoon rest. <strong>TDL Monastery</strong> evening prayers. <strong>Mandala Top</strong> &mdash; 108 stupas at sunset.
+        <strong>Dirang Dzong</strong> &mdash; 500-year-old stone fort monastery. <strong>Sangti Valley Trek</strong> (booked). <strong>Dirang Hot Springs</strong> &mdash; natural sulphur springs. <strong>TDL Monastery</strong> evening prayers. <strong>Mandala Top</strong> &mdash; 108 stupas at sunset.
       </div>
       <div class="day-tags">
         <span class="tag tag-travel">relaxed day &middot; local</span>
-        <span class="tag tag-experience taw">sangti valley</span>
+        <span class="tag tag-experience taw">sangti valley trek</span>
         <span class="tag tag-experience taw">hot springs</span>
         <span class="tag tag-experience taw">mandala top sunset</span>
         <span class="tag tag-experience taw">dirang dzong</span>
-        <span class="tag tag-stay">stay: Sangti Valley night 2 ~&#8377;700/person</span>
+        <span class="tag tag-stay">stay: Zamdrol Hostel night 2</span>
       </div>
     </div>
   </div>
@@ -841,7 +902,7 @@
         <span class="tag tag-travel">~6h drive &middot; 135 km</span>
         <span class="tag tag-experience taw">sela pass 13,700 ft</span>
         <span class="tag tag-experience taw">nuranang falls</span>
-        <span class="tag tag-stay">stay: Dondrub Homestay ~&#8377;850/person</span>
+        <span class="tag tag-stay">stay: Wanderpals · &#8377;8,400/3N (&#8377;3,000 paid)</span>
       </div>
     </div>
   </div>
@@ -861,7 +922,7 @@
         <span class="tag tag-experience taw">bumla 15,200 ft</span>
         <span class="tag tag-experience taw">ptso lake</span>
         <span class="tag tag-experience taw">madhuri lake</span>
-        <span class="tag tag-stay">stay: Tawang night 2</span>
+        <span class="tag tag-stay">stay: Wanderpals night 2</span>
       </div>
     </div>
   </div>
@@ -882,7 +943,7 @@
         <span class="tag tag-experience taw">urgelling gompa</span>
         <span class="tag tag-experience taw">khinmey monastery</span>
         <span class="tag tag-experience taw">war memorial</span>
-        <span class="tag tag-stay">stay: Tawang night 3</span>
+        <span class="tag tag-stay">stay: Wanderpals night 3</span>
       </div>
     </div>
   </div>
@@ -906,7 +967,7 @@
       <div class="day-tags">
         <span class="tag tag-travel">14&ndash;16h drive</span>
         <span class="tag tag-warning">long day &middot; 4 AM start</span>
-        <span class="tag tag-stay">stay: Prashaanti ~&#8377;500/person</span>
+        <span class="tag tag-stay">stay: Airbnb · &#8377;5,250 (fully paid)</span>
       </div>
     </div>
   </div>
@@ -966,68 +1027,141 @@
     <div class="stays-row">
       <div class="stays-night stays-phase-meg">Night 1</div>
       <div class="stays-date">Oct 16 Fri</div>
-      <div class="stays-place">Shillong &mdash; XTSY Hostel</div>
-      <div class="stays-type">~&#8377;499/person</div>
+      <div class="stays-place">Shillong &mdash; Zostel</div>
+      <div class="stays-type">&#8377;3,776</div>
     </div>
     <div class="stays-row">
       <div class="stays-night stays-phase-meg">Night 2</div>
       <div class="stays-date">Oct 17 Sat</div>
       <div class="stays-place">Nongriat &mdash; Serene Homestay</div>
-      <div class="stays-type">~&#8377;500/person</div>
+      <div class="stays-type">&#8377;2,800</div>
     </div>
     <div class="stays-row">
       <div class="stays-night stays-phase-meg">Night 3</div>
       <div class="stays-date">Oct 18 Sun</div>
-      <div class="stays-place">Shnongpdeng &mdash; Riverside camping</div>
-      <div class="stays-type">~&#8377;800/night</div>
+      <div class="stays-place">Shnongpdeng &mdash; Tympang Chalet</div>
+      <div class="stays-type">&#8377;4,000</div>
     </div>
     <div class="stays-row">
       <div class="stays-night stays-phase-meg">Night 4</div>
       <div class="stays-date">Oct 19 Mon</div>
-      <div class="stays-place">Shnongpdeng &mdash; Riverside camping</div>
-      <div class="stays-type">~&#8377;800/night</div>
+      <div class="stays-place">Shnongpdeng &mdash; Northwing Camp</div>
+      <div class="stays-type">&#8377;3,600</div>
     </div>
     <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 5</div>
-      <div class="stays-date">Oct 20 Tue</div>
-      <div class="stays-place">Dirang &mdash; Sangti Valley Homestay</div>
-      <div class="stays-type">~&#8377;700/person</div>
+      <div class="stays-night stays-phase-taw">Night 5&ndash;6</div>
+      <div class="stays-date">Oct 20&ndash;21</div>
+      <div class="stays-place">Dirang &mdash; Zamdrol Hostel</div>
+      <div class="stays-type">&#8377;5,200</div>
     </div>
     <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 6</div>
-      <div class="stays-date">Oct 21 Wed</div>
-      <div class="stays-place">Dirang &mdash; Sangti Valley Homestay</div>
-      <div class="stays-type">~&#8377;700/person</div>
-    </div>
-    <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 7</div>
-      <div class="stays-date">Oct 22 Thu</div>
-      <div class="stays-place">Tawang &mdash; Dondrub Homestay</div>
-      <div class="stays-type">~&#8377;850/night</div>
-    </div>
-    <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 8</div>
-      <div class="stays-date">Oct 23 Fri</div>
-      <div class="stays-place">Tawang &mdash; Dondrub Homestay</div>
-      <div class="stays-type">~&#8377;850/night</div>
-    </div>
-    <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 9</div>
-      <div class="stays-date">Oct 24 Sat</div>
-      <div class="stays-place">Tawang &mdash; Dondrub Homestay</div>
-      <div class="stays-type">~&#8377;850/night</div>
+      <div class="stays-night stays-phase-taw">Night 7&ndash;9</div>
+      <div class="stays-date">Oct 22&ndash;24</div>
+      <div class="stays-place">Tawang &mdash; Wanderpals Hospitality</div>
+      <div class="stays-type">&#8377;8,400</div>
     </div>
     <div class="stays-row">
       <div class="stays-night stays-phase-buf">Night 10</div>
       <div class="stays-date">Oct 25 Sun</div>
-      <div class="stays-place">Guwahati &mdash; Prashaanti</div>
-      <div class="stays-type">~&#8377;500/night</div>
+      <div class="stays-place">Guwahati &mdash; Airbnb</div>
+      <div class="stays-type">&#8377;5,250</div>
     </div>
   </div>
   <div class="stays-count">
     <div class="stays-count-item"><strong>7</strong> bookings</div>
     <div class="stays-count-item"><strong>10</strong> nights</div>
-    <div class="stays-count-item"><strong>~&#8377;6,949</strong> total/person</div>
+    <div class="stays-count-item"><strong>&#8377;33,026</strong> total</div>
+    <div class="stays-count-item"><strong>&#8377;14,543</strong> paid</div>
+    <div class="stays-count-item"><strong>&#8377;18,483</strong> remaining</div>
+  </div>
+</section>
+
+<!-- Budget -->
+<section class="budget-section">
+  <h2>Budget</h2>
+  <div class="budget-grid">
+    <div class="budget-row">
+      <div class="budget-label" style="color:var(--muted);font-weight:400;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;">Item</div>
+      <div class="budget-total" style="color:var(--muted);font-weight:400;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;">Total</div>
+      <div class="budget-paid" style="color:var(--muted);font-weight:400;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;">Paid</div>
+      <div class="budget-remaining" style="color:var(--muted);font-weight:400;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;">Due</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Zostel (1N)</div>
+      <div class="budget-total">&#8377;3,776</div>
+      <div class="budget-paid">&#8377;793</div>
+      <div class="budget-remaining">&#8377;2,983</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Serene Homestay (1N)</div>
+      <div class="budget-total">&#8377;2,800</div>
+      <div class="budget-paid">&#8377;1,400</div>
+      <div class="budget-remaining">&#8377;1,400</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Tympang Chalet (1N)</div>
+      <div class="budget-total">&#8377;4,000</div>
+      <div class="budget-paid">&#8377;500</div>
+      <div class="budget-remaining">&#8377;3,500</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Northwing Camp (1N)</div>
+      <div class="budget-total">&#8377;3,600</div>
+      <div class="budget-paid">&#8377;1,000</div>
+      <div class="budget-remaining">&#8377;2,600</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Zamdrol Hostel (2N)</div>
+      <div class="budget-total">&#8377;5,200</div>
+      <div class="budget-paid">&#8377;2,600</div>
+      <div class="budget-remaining">&#8377;2,600</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Wanderpals (3N)</div>
+      <div class="budget-total">&#8377;8,400</div>
+      <div class="budget-paid">&#8377;3,000</div>
+      <div class="budget-remaining">&#8377;5,400</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Airbnb Guwahati (1N)</div>
+      <div class="budget-total">&#8377;5,250</div>
+      <div class="budget-paid">&#8377;5,250</div>
+      <div class="budget-remaining">&#8377;0</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Sangti Valley Trek (Dirang)</div>
+      <div class="budget-total">&#8377;7,000</div>
+      <div class="budget-paid">&#8377;1,000</div>
+      <div class="budget-remaining">&#8377;6,000</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Flights (&#8377;17,500 &times; 3)</div>
+      <div class="budget-total">&#8377;52,500</div>
+      <div class="budget-paid">&#8377;52,500</div>
+      <div class="budget-remaining">&#8377;0</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Car rental (Creta)</div>
+      <div class="budget-total">&#8377;25,872</div>
+      <div class="budget-paid">&mdash;</div>
+      <div class="budget-remaining">&#8377;25,872</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label" style="color:var(--muted);font-style:italic;">Diesel</div>
+      <div class="budget-total" style="color:var(--muted);">TBD</div>
+      <div class="budget-paid" style="color:var(--muted);">&mdash;</div>
+      <div class="budget-remaining" style="color:var(--muted);">TBD</div>
+    </div>
+    <div class="budget-row budget-footer">
+      <div class="budget-label">Total (known costs)</div>
+      <div class="budget-total">&#8377;1,18,398</div>
+      <div class="budget-paid" style="color:#4ade80;">&#8377;69,043</div>
+      <div class="budget-remaining">&#8377;49,355</div>
+    </div>
+  </div>
+  <div class="budget-per-person">
+    Per person (3): <strong>&#8377;39,466</strong> total &middot; <strong>&#8377;23,014</strong> paid &middot; <strong>&#8377;16,452</strong> remaining<br>
+    <span style="font-size:0.75rem;color:var(--muted);">+ diesel (TBD)</span>
   </div>
 </section>
 
@@ -1067,7 +1201,7 @@
 </section>
 
 <footer>
-  Tawang Road Trip &middot; October 2026 &middot; Plan v3 &mdash; last updated August 4, 2026
+  Tawang Road Trip &middot; October 2026 &middot; Plan v3 &mdash; last updated September 20, 2026
 </footer>
 
 </body>

@@ -6,7 +6,7 @@
 > Holidays used: Vijaya Dasami (Oct 20)
 > Start point: Guwahati (fly from Chennai)
 > Group: 3 people · Hyundai Creta (rental ~₹25,872 for entire trip)
-> Last updated: 2026-08-04
+> Last updated: 2026-09-20
 > Previous version: [v1](v1%20-%20original.md)
 
 ---
@@ -45,7 +45,7 @@ Mo Tu We Th Fr Sa Su
 | 7:00 PM | Drive to Shillong (3h) |
 | 10:00 PM | Reach Shillong |
 
-**Stay: Shillong — XTSY Hostel (~₹499/person)**
+**Stay: Shillong — Zostel ([map](https://maps.app.goo.gl/MtxQ3orSwhSz47TX7)) · advance paid**
 
 ---
 
@@ -65,7 +65,7 @@ Mo Tu We Th Fr Sa Su
 | 4:30 PM | **Rainbow Falls** — swim in crystal-clear pool |
 | 6:00 PM | Back to village |
 
-**Stay: Nongriat — Serene Homestay (~₹500/person)**
+**Stay: Nongriat — Serene Homestay ([map](https://maps.app.goo.gl/r4DTxCgSjXYyjJtX6)) · ☎ +91 878 757 0552 · advance paid**
 **Note:** Car parked at Tyrna overnight. Carry cash — no ATM, no UPI in Nongriat.
 
 ---
@@ -84,26 +84,26 @@ Mo Tu We Th Fr Sa Su
 | 5:30 PM | Swim/float in the river |
 | 7:00 PM | Campfire, dinner |
 
-**Stay: Shnongpdeng — riverside camping (~₹800/person with campfire + breakfast)**
+**Stay: Shnongpdeng — Tympang Chalet ([map](https://maps.app.goo.gl/bdQJcQrCumuCmMsV9)) · ☎ 93622 31366 · advance paid**
+**Note:** Buy lunch and dinner in Dawki — not available in Shnongpdeng.
 
 ---
 
-### Day 4 — Oct 19 (Mon) · Full River Day (CHILL)
+### Day 4 — Oct 19 (Mon) · River Activities Day
 
 | Time | What |
 |------|------|
-| 7:00 AM | Wake up, river sunrise |
-| 8:00 AM | Breakfast |
+| 7:00 AM | Wake up, checkout Tympang Chalet |
+| 8:00 AM | Move to Northwing Camp, settle in |
 | 9:00 AM | **Freediving** (15m visibility, emerald-green water) |
 | 11:00 AM | Snorkeling |
-| 12:00 PM | Lunch, rest |
+| 12:00 PM | Lunch (buy in Dawki) |
 | 2:00 PM | Kayaking |
 | 3:30 PM | Scuba diving (₹3,500, optional) |
 | 5:00 PM | Sunset by the river |
-| 7:00 PM | Campfire, dinner |
-| 9:00 PM | Sleep early — 4 AM wake up tomorrow |
+| 7:00 PM | Dinner, early sleep |
 
-**Stay: Shnongpdeng — riverside camping (night 2)**
+**Stay: Shnongpdeng — Northwing Camp ([map](https://maps.app.goo.gl/txmsfU4MYXJswCi78)) · ☎ +91 60097 95914 · advance paid**
 
 ---
 
@@ -111,33 +111,32 @@ Mo Tu We Th Fr Sa Su
 
 | Time | What |
 |------|------|
-| 4:00 AM | Wake up, leave Shnongpdeng |
+| 4:00 AM | Wake up, checkout Northwing Camp |
 | 7:00 AM | Reach Guwahati (3h), pick up rental Creta, breakfast |
 | 8:30 AM | Drive Kalaktang route toward Arunachal |
 | 4:30 PM | Reach Dirang (~8h with breaks) |
 | 5:00 PM | Walk around town, relax |
 | 7:00 PM | Dinner |
 
-**Stay: Dirang — Sangti Valley Homestay (~₹700/person)**
+**Stay: Dirang — Zamdrol Hostel ([map](https://maps.app.goo.gl/A653BdP4T3BChYWc7)) · ☎ +91 87328 85221 · advance paid**
 **Note:** ILP check begins at Bhalukpong. Carry printed + digital copies.
 
 ---
 
-### Day 6 — Oct 21 (Wed) · Dirang Explore + Acclimatize
+### Day 6 — Oct 21 (Wed) · Sangti Valley Trek + Dirang Evening
 
 | Time | What |
 |------|------|
-| 6:30 AM | **Sangti Valley** — morning walk, Black-necked Crane habitat (1.5h) |
-| 8:00 AM | Breakfast |
-| 9:30 AM | **Dirang Dzong (monastery)** — 500-year-old stone fort monastery |
-| 11:00 AM | **Dirang Hot Springs** — natural sulphur springs, soak and unwind |
-| 12:30 PM | Lunch |
-| 2:00 PM | Rest / nap — acclimatize before altitude days |
-| 4:00 PM | **TDL (Thubsung Dhargyeling) Monastery** — evening prayer session |
+| 6:30 AM | **Dirang Dzong (monastery)** — 500-year-old stone fort monastery (1h) |
+| 7:30 AM | Breakfast |
+| 9:00 AM | **Sangti Valley Trek** (booked) |
+| 2:00–3:00 PM | Trek ends, lunch |
+| 3:30 PM | **Dirang Hot Springs** — natural sulphur springs, soak and unwind (1h) |
+| 4:30 PM | **TDL (Thubsung Dhargyeling) Monastery** — evening prayer session |
 | 5:30 PM | **Mandala Top** — 108 stupas in concentric circles, sunset views |
 | 7:00 PM | Dinner, early sleep |
 
-**Stay: Dirang — Sangti Valley Homestay (night 2, ~₹700/person)**
+**Stay: Dirang — Zamdrol Hostel (night 2)**
 
 ---
 
@@ -154,7 +153,7 @@ Mo Tu We Th Fr Sa Su
 | 4:00 PM | Walk around town, local food |
 | Evening | **Apply for Bumla permit** at DC office (booth inside War Memorial campus) |
 
-**Stay: Tawang — Dondrub Homestay (~₹850/person)**
+**Stay: Tawang — Wanderpals Hospitality ([map](https://maps.app.goo.gl/hjmeHrc7yhpH9jfk7)) · ☎ +91 7629 877 144 · advance paid**
 
 ---
 
@@ -170,7 +169,7 @@ Mo Tu We Th Fr Sa Su
 | Afternoon | Rest, local tea shops, wander |
 | Evening | Chill |
 
-**Stay: Tawang — Dondrub Homestay (night 2)**
+**Stay: Tawang — Wanderpals Hospitality (night 2)**
 **Note:** Must use local Arunachal-registered taxi (~₹5,000). No personal vehicles allowed.
 
 ---
@@ -189,7 +188,7 @@ Mo Tu We Th Fr Sa Su
 | 5:00 PM | **War Memorial Light & Sound show** at sunset (₹50) |
 | 7:00 PM | Dinner, early sleep |
 
-**Stay: Tawang — Dondrub Homestay (night 3)**
+**Stay: Tawang — Wanderpals Hospitality (night 3)**
 
 ---
 
@@ -202,7 +201,7 @@ Mo Tu We Th Fr Sa Su
 | 11:00 AM | Continue to Guwahati |
 | 8:00 PM | Reach Guwahati (~14-16h total), return rental car |
 
-**Stay: Guwahati — Prashaanti (~₹500/person, 500m from airport)**
+**Stay: Guwahati — Airbnb ([map](https://maps.app.goo.gl/AZCXEZK3VcdxQFzs5)) · ₹5,250 fully paid**
 
 ---
 
@@ -226,25 +225,45 @@ Chill morning. Fly Guwahati 18:30 -> Chennai 21:30.
 
 ## Stays
 
-| Night | Date | Place | Stay | Est. price/person |
-|-------|------|-------|------|-------------------|
-| 1 | Oct 16 | Shillong | XTSY Hostel | ~₹499 |
-| 2 | Oct 17 | Nongriat | Serene Homestay | ~₹500 |
-| 3-4 | Oct 18-19 | Shnongpdeng | Riverside camping (TBD) | ~₹800/night |
-| 5-6 | Oct 20-21 | Dirang | Sangti Valley Homestay | ~₹700/night |
-| 7-8-9 | Oct 22-24 | Tawang | Dondrub Homestay | ~₹850/night |
-| 10 | Oct 25 | Guwahati | Prashaanti | ~₹500 |
-| **Total** | | | **7 bookings, 10 nights** | **~₹6,949/person** |
+| Night | Date | Place | Stay | Total | Paid | Remaining |
+|-------|------|-------|------|-------|------|-----------|
+| 1 | Oct 16 | Shillong | Zostel ([map](https://maps.app.goo.gl/MtxQ3orSwhSz47TX7)) | ₹3,776 | ₹793 | ₹2,983 |
+| 2 | Oct 17 | Nongriat | Serene Homestay (☎ +91 878 757 0552) | ₹2,800 | ₹1,400 | ₹1,400 |
+| 3 | Oct 18 | Shnongpdeng | Tympang Chalet (☎ 93622 31366) | ₹4,000 | ₹500 | ₹3,500 |
+| 4 | Oct 19 | Shnongpdeng | Northwing Camp (☎ +91 60097 95914) | ₹3,600 | ₹1,000 | ₹2,600 |
+| 5-6 | Oct 20-21 | Dirang | Zamdrol Hostel (☎ +91 87328 85221) | ₹5,200 | ₹2,600 | ₹2,600 |
+| 7-8-9 | Oct 22-24 | Tawang | Wanderpals Hospitality (☎ +91 7629 877 144) | ₹8,400 | ₹3,000 | ₹5,400 |
+| 10 | Oct 25 | Guwahati | Airbnb ([map](https://maps.app.goo.gl/AZCXEZK3VcdxQFzs5)) | ₹5,250 | ₹5,250 | ₹0 |
+| **Total** | | | **7 bookings, 10 nights** | **₹33,026** | **₹14,543** | **₹18,483** |
+| **Per person** | | | | **₹11,009** | **₹4,848** | **₹6,161** |
+
+### Activities
+
+| Activity / Transport | Total | Paid | Remaining |
+|----------------------|-------|------|-----------|
+| Sangti Valley Trek (Dirang, Day 6) | ₹7,000 | ₹1,000 | ₹6,000 |
+| Flights (₹17,500 x 3) | ₹52,500 | ₹52,500 | ₹0 |
+| Car rental (Hyundai Creta) | ₹25,872 | — | ₹25,872 |
+| Diesel | TBD | — | TBD |
+
+### Grand Total (Stays + Activities + Transport)
+
+| | Total | Paid | Remaining |
+|---|-------|------|-----------|
+| **Known costs** | **₹1,18,398** | **₹69,043** | **₹49,355** |
+| **Per person** | **₹39,466** | **₹23,014** | **₹16,452** |
+
+*Diesel cost TBD — not included above.*
 
 ---
 
 ## Booking Plan (book-by timeline)
 
 - [x] **~~By Sat, Aug 15~~ Done Jul 6 — Flights booked.** Outbound: Oct 16, 14:40 MAA -> 17:45 GAU. Return: Oct 26, 18:30 GAU -> 21:30 MAA.
-- [ ] **By Sun, Aug 31 — Reserve car in Guwahati.** Hyundai Creta, ~₹25,872 for entire trip. Confirm airport pickup and drop.
-- [ ] **By Tue, Sep 15 — Book stays.** Priority order: **Shillong** (night 1), **Shnongpdeng camping** (nights 3-4), **Dirang** (night 5), **Tawang** (nights 6-8), **Guwahati** (nights 9-10). Nongriat is walk-in only. Peak season — book ahead.
-- [ ] **Thu-Fri, Oct 8-9 — Apply for eILP online.** Tourist eILP valid up to 14 days (₹500 for >3 days). Set validity to start Oct 20. Processing: same-day to ~2-5 working days. Carry printed + digital copies plus photo ID. Portal: eilp.arunachal.gov.in
-- [ ] **Oct 21 evening — Apply for Bumla special permit in Tawang.** DC office (booth inside War Memorial campus) the day before the Bumla run. No advance booking, weather-dependent, foreign nationals not allowed.
+- [x] **~~By Sun, Aug 31~~ Done — Car reserved in Guwahati.** Hyundai Creta, ~₹25,872 for entire trip.
+- [x] **~~By Tue, Sep 15~~ Done — Stays booked.** All booked except Shnongpdeng (will book on arrival). Nongriat is walk-in only.
+- [x] **~~Thu-Fri, Oct 8-9~~ Done — eILP applied.**
+- [ ] **Oct 22 evening — Apply for Bumla special permit in Tawang.** DC office (booth inside War Memorial campus) the day before the Bumla run. No advance booking, weather-dependent, foreign nationals not allowed. Just show up with IDs.
 
 ---
 
