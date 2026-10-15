@@ -341,6 +341,60 @@
   .tag-stay {
     background: rgba(167,139,250,0.1);
     color: var(--accent-buf);
+    text-decoration: none;
+  }
+
+  /* Stay info card */
+  .stay-info {
+    width: 100%;
+    margin-top: 0.5rem;
+    background: rgba(167,139,250,0.06);
+    border: 1px solid rgba(167,139,250,0.15);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .stay-info-name {
+    font-weight: 700;
+    color: var(--accent-buf);
+    margin-bottom: 0.4rem;
+    font-size: 0.85rem;
+  }
+
+  .stay-info-price {
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+
+  .stay-info-rows {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.2rem 0.6rem;
+    margin-top: 0.4rem;
+  }
+
+  .stay-info-label {
+    color: var(--muted);
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+  }
+
+  .stay-info-value {
+    color: var(--text);
+    font-size: 0.8rem;
+  }
+
+  .stay-info-value a {
+    color: var(--accent-buf);
+    text-decoration: none;
+  }
+
+  .stay-info-value a:hover {
+    text-decoration: underline;
   }
 
   .tag-warning {
@@ -427,6 +481,67 @@
 
   .booking-text strong {
     color: var(--text);
+  }
+
+  /* Budget */
+  .budget-section {
+    max-width: 720px;
+    margin: 0 auto 4rem;
+    padding: 0 1.5rem;
+  }
+
+  .budget-section h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .budget-grid {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    gap: 0;
+  }
+
+  .budget-row {
+    display: contents;
+  }
+
+  .budget-row > * {
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.82rem;
+  }
+
+  .budget-label {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .budget-total { color: var(--text); text-align: right; }
+  .budget-paid { color: #4ade80; text-align: right; }
+  .budget-remaining { color: var(--accent-taw); text-align: right; font-weight: 700; }
+
+  .budget-row.budget-footer > * {
+    border-top: 2px solid var(--accent-taw);
+    border-bottom: none;
+    padding-top: 1rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+  }
+
+  .budget-per-person {
+    text-align: center;
+    margin-top: 1.25rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+
+  .budget-per-person strong {
+    color: var(--text);
+    font-size: 1.1rem;
   }
 
   /* Essentials grid */
@@ -604,7 +719,7 @@
 <section class="hero">
   <div class="hero-label">October 2026</div>
   <h1>Tawang Road Trip</h1>
-  <p class="hero-sub">Meghalaya + Arunachal Pradesh &middot; Creta &middot; 3 people</p>
+  <p class="hero-sub">Meghalaya + Arunachal Pradesh &middot; Creta &middot; 4 people</p>
   <div class="hero-stats">
     <div class="stat">
       <div class="stat-value">11</div>
@@ -702,11 +817,17 @@
       </div>
       <div class="day-title">Fly In + Night Drive to Shillong</div>
       <div class="day-desc">
-        Fly Chennai 14:40 &rarr; Guwahati 17:45. Grab dinner near the airport, then night drive to <strong>Shillong</strong> (~3h, arrive ~21:30). Check in and crash early &mdash; big day tomorrow.
+        Fly Chennai 14:40 &rarr; Guwahati 17:45. Pick up car, dinner. Night drive to <strong>Shillong</strong> (~3h, arrive ~22:00).
       </div>
       <div class="day-tags">
         <span class="tag tag-travel">3h flight + 3h drive</span>
-        <span class="tag tag-stay">stay: shillong</span>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Zostel <span class="stay-info-price">&#8377;3,776 (&#8377;793 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 16 &rarr; Oct 17</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/QjFkJTR9xEGDhE3w6" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -717,17 +838,25 @@
       <div class="day-header">
         <div class="day-date">Oct 17 &middot; Saturday</div>
       </div>
-      <div class="day-title">Sunrise Laitlum + Nongriat Trek</div>
+      <div class="day-title">Laitlum + Cherrapunji Waterfalls + Nongriat Trek</div>
       <div class="day-desc">
-        Wake early, drive to <strong>Laitlum Canyon</strong> (~45 km from Shillong) &mdash; "End of Hills." 360&deg; views of endless valleys with mist in the morning light. Spend ~1.5h. Then drive to <strong>Tyrna village</strong> (~2.5h). Trek 3,500 steps down through jungle to <strong>Nongriat village</strong>. Visit the <strong>Double Decker Living Root Bridge</strong> &mdash; the only one in the world. Hike to <strong>Rainbow Falls</strong> (skip first lagoon, the blue lagoon later is better). Stay overnight in the village.
+        5:30 AM wake up. <strong>Laitlum Canyon</strong> sunrise (1h). Drive to Cherrapunji (2.5h). <strong>Nohkalikai Falls</strong> &mdash; tallest plunge waterfall in India (1h). <strong>Wei Saw Dong Falls</strong> &mdash; three-tiered, bathable (45 min). Drive to Tyrna (30 min). Trek down 3,500 steps (1.5h). <strong>Double Decker Living Root Bridge</strong>. <strong>Rainbow Falls</strong> &mdash; swim.
       </div>
       <div class="day-tags">
-        <span class="tag tag-travel">1h drive + 1.5h canyon + 2.5h drive + 1.5h descent</span>
-        <span class="tag tag-warning">packed day &middot; leave by 5:30 AM</span>
+        <span class="tag tag-warning">packed day &middot; 5:30 AM start</span>
         <span class="tag tag-experience">laitlum canyon</span>
+        <span class="tag tag-experience">nohkalikai falls</span>
+        <span class="tag tag-experience">wei saw dong falls</span>
         <span class="tag tag-experience">root bridge</span>
         <span class="tag tag-experience">rainbow falls</span>
-        <span class="tag tag-stay">stay: nongriat village</span>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Serene Homestay <span class="stay-info-price">&#8377;2,800 (&#8377;1,400 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 17 &rarr; Oct 18</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">+91 878 757 0552</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/r4DTxCgSjXYyjJtX6" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -738,14 +867,22 @@
       <div class="day-header">
         <div class="day-date">Oct 18 &middot; Sunday</div>
       </div>
-      <div class="day-title">Trek Up + Shnongpdeng Riverside Camp</div>
+      <div class="day-title">Trek Up + Shnongpdeng</div>
       <div class="day-desc">
-        Early morning climb back up from Nongriat (3,500 steps, ~2.5h). Drive to <strong>Shnongpdeng</strong> on the crystal-clear Umngot River. Set up riverside camp. Evening by the water.
+        Trek back up to Tyrna (2.5h). Drive to <strong>Shnongpdeng</strong> (3h). Arrive 2 PM. Boating, cliff jumping, swim. Campfire.
       </div>
       <div class="day-tags">
         <span class="tag tag-travel">2.5h climb + 3h drive</span>
         <span class="tag tag-experience">riverside camping</span>
-        <span class="tag tag-stay">stay: shnongpdeng camp</span>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Tympang Chalet <span class="stay-info-price">&#8377;4,000 (&#8377;500 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 18 &rarr; Oct 19</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">93622 31366</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/bdQJcQrCumuCmMsV9" target="_blank">Open in Maps</a></div>
+          <div class="stay-info-label" style="color:#f87171;">Note</div><div class="stay-info-value" style="color:#f87171;">Buy lunch &amp; dinner in Dawki &mdash; not available in Shnongpdeng</div>
+        </div>
       </div>
       <div class="spot-card">
         <h4>Shnongpdeng &mdash; The Spot</h4>
@@ -753,9 +890,9 @@
         <dl class="spot-detail">
           <dt>Location</dt><dd>West Jaintia Hills, ~90 km from Shillong, near India-Bangladesh border</dd>
           <dt>How to reach</dt><dd>Shillong &rarr; Dawki road (3h), take Shnongpdeng turn before Dawki town</dd>
-          <dt>Activities</dt><dd>Freediving, snorkeling, cliff jumping, kayaking, boating</dd>
+          <dt>Activities</dt><dd>Freediving, snorkeling, cliff jumping, kayaking, upstream forest walks, nearby root bridge</dd>
           <dt>Best time</dt><dd>Oct&ndash;Feb (clearest water, emerald-green)</dd>
-          <dt>Camping</dt><dd>Riverside spots from ~&#8377;400/head</dd>
+          <dt>Camping</dt><dd>Riverside spots from ~&#8377;800/person</dd>
         </dl>
       </div>
     </div>
@@ -767,15 +904,23 @@
       <div class="day-header">
         <div class="day-date">Oct 19 &middot; Monday</div>
       </div>
-      <div class="day-title">Freedive + Drive to Bomdila</div>
+      <div class="day-title">Full River Day (CHILL)</div>
       <div class="day-desc">
-        Morning <strong>freediving</strong> in the Umngot &mdash; 15m visibility, transparent emerald-green water. Then drive to Guwahati, pick up the rental car, and drive the <strong>Kalaktang route</strong> to Bomdila. Passes Zangdokpalri Monastery en route.
+        <strong>Freediving</strong> (15m visibility). Snorkeling. Kayaking. Scuba (optional &#8377;3,500). Upstream forest walk with guide. Nearby root bridge (1&ndash;1.5h jungle walk). Sleep early &mdash; 4 AM wake up tomorrow.
       </div>
       <div class="day-tags">
         <span class="tag tag-experience">freediving</span>
-        <span class="tag tag-travel">3h drive + 7h drive</span>
-        <span class="tag tag-warning">long day</span>
-        <span class="tag tag-stay">stay: bomdila</span>
+        <span class="tag tag-experience">snorkeling</span>
+        <span class="tag tag-experience">kayaking</span>
+        <span class="tag tag-experience">jungle walk</span>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Northwing Camp <span class="stay-info-price">&#8377;3,600 (&#8377;1,000 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 19 &rarr; Oct 20</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">+91 60097 95914</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/txmsfU4MYXJswCi78" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -792,16 +937,21 @@
       <div class="day-header">
         <div class="day-date">Oct 20 &middot; Tuesday &middot; Vijaya Dasami</div>
       </div>
-      <div class="day-title">Bomdila &rarr; Dirang &mdash; Acclimatize</div>
+      <div class="day-title">PURE DRIVE &mdash; Shnongpdeng to Dirang</div>
       <div class="day-desc">
-        Short drive to <strong>Dirang</strong>. Rest and acclimatize before the high passes. Explore <strong>Sangti Valley</strong> (riverside meadows, orchards), soak in the <strong>hot springs</strong>, visit <strong>Mandala Top</strong> (108 stupas in concentric circles).
+        4 AM wake up. Drive to Guwahati (3h), pick up rental Creta, breakfast. Drive <strong>Kalaktang route</strong> (8h). Reach <strong>Dirang</strong> ~4:30 PM. Walk around town, relax. ILP check at Bhalukpong.
       </div>
       <div class="day-tags">
-        <span class="tag tag-travel">1.5h drive + local</span>
-        <span class="tag tag-experience taw">sangti valley</span>
-        <span class="tag tag-experience taw">hot springs</span>
-        <span class="tag tag-experience taw">mandala top</span>
-        <span class="tag tag-stay">stay: dirang</span>
+        <span class="tag tag-travel">3h + 8h drive</span>
+        <span class="tag tag-warning">long day &middot; 4 AM start</span>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Zamdrol Hostel <span class="stay-info-price">&#8377;5,200 / 2 nights (&#8377;2,600 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 20 &rarr; Oct 22</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">+91 87328 85221</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/A653BdP4T3BChYWc7" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -812,15 +962,17 @@
       <div class="day-header">
         <div class="day-date">Oct 21 &middot; Wednesday</div>
       </div>
-      <div class="day-title">Dirang &rarr; Tawang via Sela Pass</div>
+      <div class="day-title">Sangti Valley Trek + Dirang Evening</div>
       <div class="day-desc">
-        The highlight drive. Cross <strong>Sela Pass (13,700 ft)</strong> &mdash; frozen lake, war memorial, army tea canteen. The 2024 <strong>Sela Tunnel</strong> keeps the route open even in snow. Cross before noon as winds and fog roll in. Stop at <strong>Jaswant Garh War Memorial</strong> and <strong>Nuranang (Jang) Falls</strong> (100m cascade).
+        <strong>Dirang Dzong</strong> &mdash; 500-year-old stone fort monastery. <strong>Sangti Valley Trek</strong> (booked). <strong>Dirang Hot Springs</strong> &mdash; natural sulphur springs. <strong>TDL Monastery</strong> evening prayers. <strong>Mandala Top</strong> &mdash; 108 stupas at sunset.
       </div>
       <div class="day-tags">
-        <span class="tag tag-travel">~6h drive &middot; 135 km</span>
-        <span class="tag tag-experience taw">sela pass 13,700 ft</span>
-        <span class="tag tag-experience taw">nuranang falls</span>
-        <span class="tag tag-stay">stay: tawang</span>
+        <span class="tag tag-travel">relaxed day &middot; local</span>
+        <span class="tag tag-experience taw">sangti valley trek</span>
+        <span class="tag tag-experience taw">hot springs</span>
+        <span class="tag tag-experience taw">mandala top sunset</span>
+        <span class="tag tag-experience taw">dirang dzong</span>
+        <span class="tag tag-stay">Zamdrol Hostel &middot; night 2</span>
       </div>
     </div>
   </div>
@@ -831,17 +983,22 @@
       <div class="day-header">
         <div class="day-date">Oct 22 &middot; Thursday</div>
       </div>
-      <div class="day-title">Tawang Monastery + Town Exploration</div>
+      <div class="day-title">Dirang &rarr; Tawang via Sela Pass</div>
       <div class="day-desc">
-        Pre-dawn <strong>Tawang Monastery</strong> for morning prayers (largest in India, 2nd largest in Asia). Then explore at your own pace: <strong>Urgelling Gompa</strong> (600-year-old birthplace of the 6th Dalai Lama), <strong>Khinmey Monastery</strong> (colorful Medicine Buddha interior), <strong>Chakzam Bridge</strong> (700-year-old iron suspension bridge), <strong>Giant Buddha Statue</strong>. Evening: <strong>Tawang War Memorial Light &amp; Sound show</strong> at sunset (&#8377;50) &mdash; views of the monastery across the valley.
+        6 AM leave. <strong>Sela Pass (13,700 ft)</strong> &mdash; frozen lake, war memorial, army tea. <strong>Jaswant Garh War Memorial</strong>. <strong>Nuranang Falls</strong> (before 3:30 PM for rainbow). Reach Tawang 12 PM. Rest, acclimatize. Apply for Bumla permit evening.
       </div>
       <div class="day-tags">
-        <span class="tag tag-travel">relaxed day &middot; local</span>
-        <span class="tag tag-experience taw">monastery sunrise</span>
-        <span class="tag tag-experience taw">urgelling gompa</span>
-        <span class="tag tag-experience taw">chakzam bridge</span>
-        <span class="tag tag-experience taw">war memorial</span>
-        <span class="tag tag-stay">stay: tawang</span>
+        <span class="tag tag-travel">~6h drive &middot; 135 km</span>
+        <span class="tag tag-experience taw">sela pass 13,700 ft</span>
+        <span class="tag tag-experience taw">nuranang falls</span>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Wanderpals Hospitality <span class="stay-info-price">&#8377;8,400 / 3 nights (&#8377;3,000 paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 22 &rarr; Oct 25</div>
+          <div class="stay-info-label">Phone</div><div class="stay-info-value">+91 7629 877 144</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/hjmeHrc7yhpH9jfk7" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -852,16 +1009,16 @@
       <div class="day-header">
         <div class="day-date">Oct 23 &middot; Friday</div>
       </div>
-      <div class="day-title">Bumla Pass + PTSO Lake + Madhuri Lake</div>
+      <div class="day-title">Bumla Pass + Lakes</div>
       <div class="day-desc">
-        Full day excursion by local taxi. Drive to <strong>Bumla Pass (15,200 ft)</strong> &mdash; Indo-China border, army briefing, 19+ lakes along the route. Stop at <strong>PTSO Lake</strong> (travelers say more impressive than Madhuri &mdash; afternoon reflections are best) and <strong>Madhuri Lake (Sangetsar Tso)</strong> with its haunting dead tree trunks.
+        Local taxi to <strong>Bumla Pass (15,200 ft)</strong> &mdash; Indo-China border, army briefing. <strong>PTSO Lake</strong>. <strong>Madhuri Lake (Sangetsar Tso)</strong>. Back by 1 PM. Rest, wander. Must use local taxi ~&#8377;5,000.
       </div>
       <div class="day-tags">
-        <span class="tag tag-travel">full day &middot; taxi ~&#8377;5,500</span>
+        <span class="tag tag-travel">full day &middot; taxi ~&#8377;5,000</span>
         <span class="tag tag-experience taw">bumla 15,200 ft</span>
         <span class="tag tag-experience taw">ptso lake</span>
         <span class="tag tag-experience taw">madhuri lake</span>
-        <span class="tag tag-stay">stay: tawang</span>
+        <span class="tag tag-stay">Wanderpals &middot; night 2</span>
       </div>
     </div>
   </div>
@@ -872,13 +1029,17 @@
       <div class="day-header">
         <div class="day-date">Oct 24 &middot; Saturday</div>
       </div>
-      <div class="day-title">Tawang &rarr; Bomdila</div>
+      <div class="day-title">Tawang Monastery + Gompas + War Memorial</div>
       <div class="day-desc">
-        Begin the descent. Recross Sela Pass early morning, slower pace, more photo stops. Visit <strong>Bomdila Monastery</strong>.
+        5:30 AM <strong>Tawang Monastery</strong> sunrise + morning prayers. <strong>Urgelling Gompa</strong> (6th Dalai Lama birthplace). <strong>Khinmey Monastery</strong> (Medicine Buddha). <strong>War Memorial Light &amp; Sound show</strong> at sunset (&#8377;50). Pack for tomorrow.
       </div>
       <div class="day-tags">
-        <span class="tag tag-travel">6&ndash;7h drive</span>
-        <span class="tag tag-stay">stay: bomdila</span>
+        <span class="tag tag-travel">relaxed day &middot; local</span>
+        <span class="tag tag-experience taw">monastery sunrise</span>
+        <span class="tag tag-experience taw">urgelling gompa</span>
+        <span class="tag tag-experience taw">khinmey monastery</span>
+        <span class="tag tag-experience taw">war memorial</span>
+        <span class="tag tag-stay">Wanderpals &middot; night 3</span>
       </div>
     </div>
   </div>
@@ -895,13 +1056,20 @@
       <div class="day-header">
         <div class="day-date">Oct 25 &middot; Sunday</div>
       </div>
-      <div class="day-title">Bomdila &rarr; Tezpur</div>
+      <div class="day-title">PURE DRIVE &mdash; Tawang to Guwahati</div>
       <div class="day-desc">
-        Easy half-day drive down to the plains. Rest and recover in Tezpur. Absorbs any delays from the mountains.
+        4 AM wake up. 14&ndash;16h drive. Quick <strong>Bomdila Monastery</strong> stop + lunch midway. Reach <strong>Guwahati</strong> ~8 PM. Return rental car.
       </div>
       <div class="day-tags">
-        <span class="tag tag-travel">4&ndash;5h drive</span>
-        <span class="tag tag-stay">stay: tezpur</span>
+        <span class="tag tag-travel">14&ndash;16h drive</span>
+        <span class="tag tag-warning">long day &middot; 4 AM start</span>
+      </div>
+      <div class="stay-info">
+        <div class="stay-info-name">Airbnb <span class="stay-info-price">&#8377;5,250 (fully paid)</span></div>
+        <div class="stay-info-rows">
+          <div class="stay-info-label">Check-in/out</div><div class="stay-info-value">Oct 25 &rarr; Oct 26</div>
+          <div class="stay-info-label">Directions</div><div class="stay-info-value"><a href="https://maps.app.goo.gl/gkRzP788Yo1QhgwV6" target="_blank">Open in Maps</a></div>
+        </div>
       </div>
     </div>
   </div>
@@ -912,119 +1080,170 @@
       <div class="day-header">
         <div class="day-date">Oct 26 &middot; Monday</div>
       </div>
-      <div class="day-title">Tezpur &rarr; Guwahati &rarr; Fly Home</div>
+      <div class="day-title">Fly Home</div>
       <div class="day-desc">
-        Morning drive to Guwahati (~4h). Return rental car. Fly Guwahati 18:30 &rarr; Chennai 21:30.
+        Chill morning. Fly Guwahati 18:30 &rarr; Chennai 21:30.
       </div>
       <div class="day-tags">
-        <span class="tag tag-travel">4h drive + 3h flight</span>
+        <span class="tag tag-travel">3h flight</span>
       </div>
     </div>
   </div>
 
 </div>
 
-<!-- Booking Timeline -->
+<!-- Booking Reminder -->
 <section class="booking-section">
-  <h2>Booking Deadlines</h2>
-
-  <div class="booking-item">
-    <div class="booking-date" style="color: #4ade80;">&#10003; Done Jul 6</div>
-    <div class="booking-text"><strong>Flights booked.</strong> Outbound: Oct 16, 14:40 MAA &rarr; 17:45 GAU. Return: Oct 26, 18:30 GAU &rarr; 21:30 MAA.</div>
-  </div>
-
-  <div class="booking-item">
-    <div class="booking-date">By Aug 31</div>
-    <div class="booking-text"><strong>Reserve car</strong> in Guwahati. Hyundai Creta, &#8377;25,872 for the entire trip. Confirm airport pickup and drop.</div>
-  </div>
-
-  <div class="booking-item">
-    <div class="booking-date">By Sep 15</div>
-    <div class="booking-text"><strong>Book stays.</strong> Shillong (1N), Nongriat village (1N), Shnongpdeng camping (1N), Bomdila (2N), Dirang (1N), Tawang (3N), Tezpur (1N). Peak season &mdash; book ahead.</div>
-  </div>
-
-  <div class="booking-item">
-    <div class="booking-date">Oct 8&ndash;9</div>
-    <div class="booking-text"><strong>Apply for eILP online.</strong> &#8377;500 for &gt;3 days (up to 14 days). Set validity from Oct 19. Processing: same-day to ~2&ndash;5 working days. Portal: eilp.arunachal.gov.in. Carry printed + digital copies + photo ID.</div>
-  </div>
+  <h2>Pending</h2>
 
   <div class="booking-item">
     <div class="booking-date">Oct 22 eve</div>
-    <div class="booking-text"><strong>Bumla special permit</strong> at DC office in Tawang (booth inside War Memorial campus). No advance booking. Weather-dependent. Foreign nationals not allowed.</div>
+    <div class="booking-text"><strong>Bumla permit</strong> at DC office in Tawang. No advance booking. Weather-dependent. Foreign nationals not allowed.</div>
   </div>
 </section>
 
 <!-- Stays Summary -->
 <section class="stays-section">
-  <h2>Nightly Stays &mdash; 10 Nights</h2>
+  <h2>Nightly Stays &mdash; 7 Bookings, 10 Nights</h2>
   <div class="stays-grid">
     <div class="stays-row">
       <div class="stays-night stays-phase-meg">Night 1</div>
       <div class="stays-date">Oct 16 Fri</div>
-      <div class="stays-place">Shillong</div>
-      <div class="stays-type">Hotel / Guesthouse</div>
+      <div class="stays-place">Shillong &mdash; Zostel</div>
+      <div class="stays-type">&#8377;3,776</div>
     </div>
     <div class="stays-row">
       <div class="stays-night stays-phase-meg">Night 2</div>
       <div class="stays-date">Oct 17 Sat</div>
-      <div class="stays-place">Nongriat Village</div>
-      <div class="stays-type">Village homestay</div>
+      <div class="stays-place">Nongriat &mdash; Serene Homestay</div>
+      <div class="stays-type">&#8377;2,800</div>
     </div>
     <div class="stays-row">
       <div class="stays-night stays-phase-meg">Night 3</div>
       <div class="stays-date">Oct 18 Sun</div>
-      <div class="stays-place">Shnongpdeng</div>
-      <div class="stays-type">Riverside camping</div>
+      <div class="stays-place">Shnongpdeng &mdash; Tympang Chalet</div>
+      <div class="stays-type">&#8377;4,000</div>
     </div>
     <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 4</div>
+      <div class="stays-night stays-phase-meg">Night 4</div>
       <div class="stays-date">Oct 19 Mon</div>
-      <div class="stays-place">Bomdila</div>
-      <div class="stays-type">Hotel</div>
+      <div class="stays-place">Shnongpdeng &mdash; Northwing Camp</div>
+      <div class="stays-type">&#8377;3,600</div>
     </div>
     <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 5</div>
-      <div class="stays-date">Oct 20 Tue</div>
-      <div class="stays-place">Dirang</div>
-      <div class="stays-type">Hotel</div>
+      <div class="stays-night stays-phase-taw">Night 5&ndash;6</div>
+      <div class="stays-date">Oct 20&ndash;21</div>
+      <div class="stays-place">Dirang &mdash; Zamdrol Hostel</div>
+      <div class="stays-type">&#8377;5,200</div>
     </div>
     <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 6</div>
-      <div class="stays-date">Oct 21 Wed</div>
-      <div class="stays-place">Tawang</div>
-      <div class="stays-type">Hotel</div>
-    </div>
-    <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 7</div>
-      <div class="stays-date">Oct 22 Thu</div>
-      <div class="stays-place">Tawang</div>
-      <div class="stays-type">Hotel</div>
-    </div>
-    <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 8</div>
-      <div class="stays-date">Oct 23 Fri</div>
-      <div class="stays-place">Tawang</div>
-      <div class="stays-type">Hotel</div>
-    </div>
-    <div class="stays-row">
-      <div class="stays-night stays-phase-taw">Night 9</div>
-      <div class="stays-date">Oct 24 Sat</div>
-      <div class="stays-place">Bomdila</div>
-      <div class="stays-type">Hotel</div>
+      <div class="stays-night stays-phase-taw">Night 7&ndash;9</div>
+      <div class="stays-date">Oct 22&ndash;24</div>
+      <div class="stays-place">Tawang &mdash; Wanderpals Hospitality</div>
+      <div class="stays-type">&#8377;8,400</div>
     </div>
     <div class="stays-row">
       <div class="stays-night stays-phase-buf">Night 10</div>
       <div class="stays-date">Oct 25 Sun</div>
-      <div class="stays-place">Tezpur</div>
-      <div class="stays-type">Hotel</div>
+      <div class="stays-place">Guwahati &mdash; Airbnb</div>
+      <div class="stays-type">&#8377;5,250</div>
     </div>
   </div>
   <div class="stays-count">
-    <div class="stays-count-item"><strong>8</strong> locations</div>
+    <div class="stays-count-item"><strong>7</strong> bookings</div>
     <div class="stays-count-item"><strong>10</strong> nights</div>
-    <div class="stays-count-item"><strong>3</strong> Tawang</div>
-    <div class="stays-count-item"><strong>2</strong> Bomdila</div>
-    <div class="stays-count-item"><strong>1</strong> Tezpur</div>
+    <div class="stays-count-item"><strong>&#8377;33,026</strong> total</div>
+    <div class="stays-count-item"><strong>&#8377;14,543</strong> paid</div>
+    <div class="stays-count-item"><strong>&#8377;18,483</strong> remaining</div>
+  </div>
+</section>
+
+<!-- Budget -->
+<section class="budget-section">
+  <h2>Budget</h2>
+  <div class="budget-grid">
+    <div class="budget-row">
+      <div class="budget-label" style="color:var(--muted);font-weight:400;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;">Item</div>
+      <div class="budget-total" style="color:var(--muted);font-weight:400;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;">Total</div>
+      <div class="budget-paid" style="color:var(--muted);font-weight:400;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;">Paid</div>
+      <div class="budget-remaining" style="color:var(--muted);font-weight:400;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.1em;">Due</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Zostel (1N)</div>
+      <div class="budget-total">&#8377;3,776</div>
+      <div class="budget-paid">&#8377;793</div>
+      <div class="budget-remaining">&#8377;2,983</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Serene Homestay (1N)</div>
+      <div class="budget-total">&#8377;2,800</div>
+      <div class="budget-paid">&#8377;1,400</div>
+      <div class="budget-remaining">&#8377;1,400</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Tympang Chalet (1N)</div>
+      <div class="budget-total">&#8377;4,000</div>
+      <div class="budget-paid">&#8377;500</div>
+      <div class="budget-remaining">&#8377;3,500</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Northwing Camp (1N)</div>
+      <div class="budget-total">&#8377;3,600</div>
+      <div class="budget-paid">&#8377;1,000</div>
+      <div class="budget-remaining">&#8377;2,600</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Zamdrol Hostel (2N)</div>
+      <div class="budget-total">&#8377;5,200</div>
+      <div class="budget-paid">&#8377;2,600</div>
+      <div class="budget-remaining">&#8377;2,600</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Wanderpals (3N)</div>
+      <div class="budget-total">&#8377;8,400</div>
+      <div class="budget-paid">&#8377;3,000</div>
+      <div class="budget-remaining">&#8377;5,400</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Airbnb Guwahati (1N)</div>
+      <div class="budget-total">&#8377;5,250</div>
+      <div class="budget-paid">&#8377;5,250</div>
+      <div class="budget-remaining">&#8377;0</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Sangti Valley Trek (Dirang)</div>
+      <div class="budget-total">&#8377;7,000</div>
+      <div class="budget-paid">&#8377;1,000</div>
+      <div class="budget-remaining">&#8377;6,000</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Flights (&#8377;17,500 &times; 4)</div>
+      <div class="budget-total">&#8377;70,000</div>
+      <div class="budget-paid">&#8377;70,000</div>
+      <div class="budget-remaining">&#8377;0</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label">Car rental (Creta)</div>
+      <div class="budget-total">&#8377;25,872</div>
+      <div class="budget-paid">&#8377;1,000</div>
+      <div class="budget-remaining">&#8377;24,872</div>
+    </div>
+    <div class="budget-row">
+      <div class="budget-label" style="color:var(--muted);font-style:italic;">Diesel</div>
+      <div class="budget-total" style="color:var(--muted);">TBD</div>
+      <div class="budget-paid" style="color:var(--muted);">&mdash;</div>
+      <div class="budget-remaining" style="color:var(--muted);">TBD</div>
+    </div>
+    <div class="budget-row budget-footer">
+      <div class="budget-label">Total (known costs)</div>
+      <div class="budget-total">&#8377;1,35,898</div>
+      <div class="budget-paid" style="color:#4ade80;">&#8377;86,543</div>
+      <div class="budget-remaining">&#8377;49,355</div>
+    </div>
+  </div>
+  <div class="budget-per-person">
+    Per person (4): <strong>&#8377;33,975</strong> total &middot; <strong>&#8377;21,636</strong> paid &middot; <strong>&#8377;12,339</strong> remaining<br>
+    <span style="font-size:0.75rem;color:var(--muted);">+ diesel (TBD)</span>
   </div>
 </section>
 
@@ -1034,7 +1253,7 @@
   <div class="essentials-grid">
     <div class="essential-card">
       <h3>Cash</h3>
-      <p>Load up at Guwahati &amp; Bomdila. ATMs past Bomdila are unreliable and run dry. Budget &#8377;1,500&ndash;3,000/day.</p>
+      <p>Load up at Guwahati &amp; Bomdila. ATMs past Bomdila are unreliable and run dry. Nongriat has no ATM or UPI. Budget &#8377;1,500&ndash;3,000/day.</p>
     </div>
     <div class="essential-card">
       <h3>Connectivity</h3>
@@ -1042,7 +1261,7 @@
     </div>
     <div class="essential-card">
       <h3>Altitude</h3>
-      <p>Acclimatize in Dirang (Day 5). Carry Diamox if advised. Sela is 13,700 ft, Bumla is 15,200 ft.</p>
+      <p>Acclimatize in Dirang (Days 5&ndash;6). Carry Diamox if advised. Sela is 13,700 ft, Bumla is 15,200 ft.</p>
     </div>
     <div class="essential-card">
       <h3>Gear</h3>
@@ -1064,7 +1283,7 @@
 </section>
 
 <footer>
-  Tawang Road Trip &middot; October 2026 &middot; Plan last updated July 13, 2026
+  Tawang Road Trip &middot; October 2026 &middot; Plan v3 &mdash; last updated September 20, 2026
 </footer>
 
 </body>
